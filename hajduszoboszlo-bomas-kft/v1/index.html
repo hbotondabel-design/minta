@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="hu"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bomas Kft. — mintaoldal · 1. változat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"><style>
+:root{--fo:#1D5C4A;--hatter:#F7F6F3;--kartya:#FFFFFF;--tinta:#12181B;
+      --halvany:#77828A;--vonal:#E5E3DD;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--hatter);color:var(--tinta);line-height:1.62;font-size:16.5px;
+  font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Sora', system-ui, sans-serif;font-weight:400;letter-spacing:-.02em;margin:0}
+p{margin:0} img{max-width:100%;display:block} a{color:inherit}
+.szalag{background:var(--tinta);color:var(--hatter);font-size:13px;padding:9px 16px;text-align:center}
+.szalag b{font-weight:600} .szalag a{color:inherit;opacity:.8}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--hatter) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.stuck{border-bottom-color:var(--vonal)}
+.hbar{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:'Sora', system-ui, sans-serif;font-size:20px;font-weight:500;letter-spacing:-.02em}
+.nav{display:flex;gap:24px} .nav a{font-size:14.5px;text-decoration:none;color:var(--halvany)}
+.nav a:hover{color:var(--tinta)}
+@media(max-width:760px){.nav{display:none}}
+@media(max-width:680px){header .btn{display:none} .logo{font-size:18px} .hbar{height:62px}}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;
+  font:500 15px Inter,sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent;
+  transition:transform .16s var(--ease),background-color .25s,color .25s,border-color .25s}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--fo);color:#fff} .btn-p:hover{filter:brightness(1.12)}
+.btn-s{border-color:var(--vonal);color:var(--tinta)} .btn-s:hover{border-color:var(--tinta)}
+.hero{position:relative;min-height:min(76vh,620px);display:flex;align-items:flex-end;
+  overflow:hidden;border-radius:0 0 30px 30px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(12,8,6,.84) 0%,rgba(12,8,6,.58) 40%,rgba(12,8,6,.1) 72%,transparent 90%),
+             linear-gradient(180deg,rgba(12,8,6,.3),transparent 34%,rgba(12,8,6,.45))}
+.hero-t{position:relative;z-index:2;color:#fff;padding-bottom:clamp(34px,6vw,64px);width:100%}
+.kicsi{font:500 11.5px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
+.hero h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:16px 0 0;max-width:16ch;font-weight:300}
+.hero p{margin-top:16px;max-width:44ch;color:rgba(255,255,255,.86);font-size:clamp(15.5px,1.5vw,18px)}
+.gombok{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}
+.hero .btn-s{border-color:rgba(255,255,255,.45);color:#fff}
+.sav{background:var(--kartya);border-bottom:1px solid var(--vonal)}
+.sav-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;padding:26px 0}
+.si b{display:block;font-family:'Sora', system-ui, sans-serif;font-size:17px;font-weight:500}
+.si span{font-size:14px;color:var(--halvany)}
+section{scroll-margin-top:80px} .sec{padding-block:clamp(56px,8vw,96px)}
+.fejlec{max-width:56ch;margin-bottom:clamp(26px,4vw,44px)}
+.fejlec h2{font-size:clamp(26px,3.6vw,40px);line-height:1.12;margin:12px 0 14px;font-weight:300}
+.fejlec p{color:var(--halvany)}
+.blokkok{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.blokk{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:24px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.blokk:hover{transform:translateY(-3px);box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.szam{font-family:'Sora', system-ui, sans-serif;font-size:13px;color:var(--fo);font-weight:500}
+.blokk h3{font-size:20px;margin:10px 0 8px} .blokk p{color:var(--halvany);font-size:14.8px}
+.ket{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,46px);align-items:start}
+@media(max-width:820px){.ket{grid-template-columns:1fr}}
+.ora{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:26px}
+.ora-sor{display:flex;justify-content:space-between;gap:14px;padding:11px 0;
+  border-bottom:1px solid var(--vonal);font-size:15px} .ora-sor:last-child{border-bottom:0}
+.hianyzik{border:1px dashed var(--vonal);border-radius:14px;padding:16px 18px;color:var(--halvany);
+  font-size:14.5px;background:color-mix(in srgb,var(--fo) 4%,transparent)}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.gk{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:4/3}
+.gk img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gk:hover img{transform:scale(1.05)}
+.kapcs-doboz{background:var(--kartya);border:1px solid var(--vonal);border-radius:20px;
+  padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px)}
+@media(max-width:820px){.kapcs-doboz{grid-template-columns:1fr}}
+.adat{display:grid;gap:14px;margin-top:22px}
+.adat .cimke{font:500 11.5px Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--halvany)}
+.adat a{color:var(--fo);text-decoration:none}
+.terkep{border:0;width:100%;height:100%;min-height:260px;border-radius:14px}
+footer{border-top:1px solid var(--vonal);padding:34px 0 70px;color:var(--halvany);font-size:13.5px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<div class="szalag">Ez egy <b>mintaoldal</b>, nem a(z) Bomas Kft. hivatalos oldala. Készítette bemutató céllal Horváth Botond Ábel. <a href="../index.html">← másik változat</a></div>
+<header id="hdr"><div class="wrap hbar"><span class="logo">Bomas Kft.</span>
+<nav class="nav"><a href="#rolunk">Rólunk</a><a href="#nyitva">Nyitvatartás</a><a href="#kapcsolat">Kapcsolat</a></nav>
+<a class="btn btn-p" href="tel:+3652270481">Hívás: +36 52 270 481</a></div></header>
+<section class="hero"><img src="../../img/bolt-1.jpg" alt="">
+  <div class="wrap hero-t">
+    <div class="kicsi rv">Autóalkatrész · Hajdúszoboszló</div>
+    <h1 class="rv">Nyitva vagytok? Van készleten? Hol vagytok pontosan?</h1><p class="rv">Erre a három kérdésre a vevő 10 másodperc alatt választ akar.</p>
+    <div class="gombok rv"><a class="btn btn-p" href="tel:+3652270481">Hívás: +36 52 270 481</a><a class="btn btn-s" href="#nyitva">Nyitvatartás</a></div>
+  </div></section>
+<div class="sav"><div class="wrap sav-in">
+  <div class="si rv"><b>Bomas Kft.</b><span>Autóalkatrész</span></div>
+  <div class="si rv"><b>Hamvas utca 11/A, Hajdúszoboszló</b><span>cím</span></div>
+  <div class="si rv"><b>+36 52 270 481</b><span>telefon</span></div>
+</div></div>
+<section id="rolunk" class="sec wrap"><div class="fejlec rv">
+  <div class="kicsi" style="color:var(--fo)">Mi kerülne ide</div>
+  <h2>Egy oldal, ami elvégzi helyettetek a beszélgetés felét.</h2>
+  <p>A szöveg és a fotók a ti anyagotokból jönnének.</p></div>
+  <div class="blokkok rv"><article class="blokk"><span class="szam">01</span><h3>Kínálat</h3><p>Termékkörök, márkák, akciók.</p></article><article class="blokk"><span class="szam">02</span><h3>Nyitvatartás</h3><p>Mindig naprakészen, ünnepnapokkal.</p></article><article class="blokk"><span class="szam">03</span><h3>Megközelítés</h3><p>Térkép, parkolás, bejárat.</p></article></div></section>
+<section id="nyitva" class="sec wrap" style="padding-top:0"><div class="ket">
+  <div class="fejlec rv"><div class="kicsi" style="color:var(--fo)">Nyitvatartás</div>
+    <h2>Amit a vevő először keres.</h2><p>Ez az adat a nyilvános térképi adatbázisból jött. Ha nem pontos, egy perc javítani.</p></div>
+  <div class="ora rv"><div class="ora-sor"><span>hétfő–péntek</span><b>08:00-16:00</b></div></div></div>
+  <div class="galeria rv"><figure class="gk"><img src="../../img/bolt-2.jpg" alt="" loading="lazy"></figure></div></section>
+<section id="kapcsolat" class="sec wrap" style="padding-top:0"><div class="kapcs-doboz rv">
+  <div><div class="kicsi" style="color:var(--fo)">Kapcsolat</div><h2>Bomas Kft.</h2>
+    <p style="color:var(--halvany);margin-top:12px">Megnéztük a weboldalukat telefonon.</p>
+    <div class="adat"><div><div class="cimke">Cím</div><div>Hamvas utca 11/A, Hajdúszoboszló</div></div>
+      <div><div class="cimke">Telefon</div><div><a href="tel:+3652270481">+36 52 270 481</a></div></div>
+    </div></div><div><iframe class="terkep" loading="lazy" title="Térkép" src="https://www.openstreetmap.org/export/embed.html?bbox=21.379711399999998%2C47.437273700000006%2C21.3877114%2C47.4452737&layer=mapnik&marker=47.4412737%2C21.3837114"></iframe></div></div></section>
+<footer><div class="wrap">Mintaoldal · Bomas Kft. · a fotók illusztrációk.</div></footer>
+<script>
+const h=document.getElementById('hdr');const g=()=>h.classList.toggle('stuck',scrollY>8);
+addEventListener('scroll',g,{passive:true});g();
+const halk=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const el=[...document.querySelectorAll('.rv')];
+document.querySelectorAll('.hero .rv,.sav .rv').forEach((x,i)=>halk?x.classList.add('in'):setTimeout(()=>x.classList.add('in'),i*45));
+if(halk)el.forEach(x=>x.classList.add('in'));else{const io=new IntersectionObserver(es=>{es.filter(y=>y.isIntersecting).forEach((y,i)=>{setTimeout(()=>y.target.classList.add('in'),Math.min(i,5)*55);io.unobserve(y.target);});},{rootMargin:'-40px 0px -60px',threshold:.08});el.forEach(x=>io.observe(x));}
+</script></body></html>
