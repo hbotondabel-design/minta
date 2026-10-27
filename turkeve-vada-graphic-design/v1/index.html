@@ -1,0 +1,295 @@
+<!DOCTYPE html><html lang="hu"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>VADA Graphic Design — mintaoldal · 1. változat</title>
+<link href="../../_fonts/fonts.css" rel="stylesheet"><style>
+:root{--fo:#2A4A6B;--hatter:#F7F7F5;--kartya:#FFFFFF;--tinta:#15191D;
+      --halvany:#737C85;--vonal:#E4E4E0;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--hatter);color:var(--tinta);line-height:1.62;font-size:16.5px;
+  font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Sora', system-ui, sans-serif;font-weight:400;letter-spacing:-.02em;margin:0}
+p{margin:0} img{max-width:100%;display:block} a{color:inherit}
+.szalag{background:var(--tinta);color:var(--hatter);font-size:13px;padding:9px 16px;text-align:center}
+.szalag b{font-weight:600} .szalag a{color:inherit;opacity:.8}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--hatter) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.stuck{border-bottom-color:var(--vonal)}
+.hbar{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:'Sora', system-ui, sans-serif;font-size:20px;font-weight:500;letter-spacing:-.02em}
+.nav{display:flex;gap:24px} .nav a{font-size:14.5px;text-decoration:none;color:var(--halvany)}
+.nav a:hover{color:var(--tinta)}
+@media(max-width:760px){.nav{display:none}}
+@media(max-width:680px){header .btn{display:none} .logo{font-size:18px} .hbar{height:62px}}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;
+  font:500 15px Inter,sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent;
+  transition:transform .16s var(--ease),background-color .25s,color .25s,border-color .25s}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--fo);color:#fff} .btn-p:hover{filter:brightness(1.12)}
+.btn-s{border-color:var(--vonal);color:var(--tinta)} .btn-s:hover{border-color:var(--tinta)}
+.hero{position:relative;min-height:min(76vh,620px);display:flex;align-items:flex-end;
+  overflow:hidden;border-radius:0 0 30px 30px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(12,8,6,.84) 0%,rgba(12,8,6,.58) 40%,rgba(12,8,6,.1) 72%,transparent 90%),
+             linear-gradient(180deg,rgba(12,8,6,.3),transparent 34%,rgba(12,8,6,.45))}
+.hero-t{position:relative;z-index:2;color:#fff;padding-bottom:clamp(34px,6vw,64px);width:100%}
+.kicsi{font:500 11.5px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
+.hero h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:16px 0 0;max-width:16ch;font-weight:300}
+.hero p{margin-top:16px;max-width:44ch;color:rgba(255,255,255,.86);font-size:clamp(15.5px,1.5vw,18px)}
+.gombok{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}
+.hero .btn-s{border-color:rgba(255,255,255,.45);color:#fff}
+.sav{background:var(--kartya);border-bottom:1px solid var(--vonal)}
+.sav-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;padding:26px 24px}
+.si b{display:block;font-family:'Sora', system-ui, sans-serif;font-size:17px;font-weight:500}
+.si span{font-size:14px;color:var(--halvany)}
+section{scroll-margin-top:80px} .sec{padding-block:clamp(56px,8vw,96px)}
+.fejlec{max-width:56ch;margin-bottom:clamp(26px,4vw,44px)}
+.fejlec h2{font-size:clamp(26px,3.6vw,40px);line-height:1.12;margin:12px 0 14px;font-weight:300}
+.fejlec p{color:var(--halvany)}
+.blokkok{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.blokk{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:24px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.blokk:hover{transform:translateY(-3px);box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.szam{font-family:'Sora', system-ui, sans-serif;font-size:13px;color:var(--fo);font-weight:500}
+.blokk h3{font-size:20px;margin:10px 0 8px} .blokk p{color:var(--halvany);font-size:14.8px}
+.ket{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,46px);align-items:start}
+@media(max-width:820px){.ket{grid-template-columns:1fr}}
+.ora{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:26px}
+.ora-sor{display:flex;justify-content:space-between;gap:14px;padding:11px 0;
+  border-bottom:1px solid var(--vonal);font-size:15px} .ora-sor:last-child{border-bottom:0}
+.hianyzik{border:1px dashed var(--vonal);border-radius:14px;padding:16px 18px;color:var(--halvany);
+  font-size:14.5px;background:color-mix(in srgb,var(--fo) 4%,transparent)}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.gk{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:4/3}
+.gk img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gk:hover img{transform:scale(1.05)}
+.kapcs-doboz{background:var(--kartya);border:1px solid var(--vonal);border-radius:20px;
+  padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px)}
+@media(max-width:820px){.kapcs-doboz{grid-template-columns:1fr}}
+.adat{display:grid;gap:14px;margin-top:22px}
+.adat .cimke{font:500 11.5px Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--halvany)}
+.adat a{color:var(--fo);text-decoration:none}
+.terkep{border:0;width:100%;height:100%;min-height:260px;border-radius:14px}
+footer{border-top:1px solid var(--vonal);padding:34px 0 70px;color:var(--halvany);font-size:13.5px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<div class="szalag">Ez egy <b>mintaoldal</b>, nem a VADA Graphic Design hivatalos oldala. Készítette bemutató céllal Horváth Ábel. <a href="../index.html">← másik változat</a></div>
+<header id="hdr"><div class="wrap hbar"><span class="logo">VADA Graphic Design</span>
+<nav class="nav"><a href="#rolunk">Rólunk</a><a href="#nyitva">Nyitvatartás</a><a href="#kapcsolat">Kapcsolat</a></nav>
+<a class="btn btn-p" href="tel:+36703638501">Hívás: +36 70 363 8501</a></div></header>
+<style>
+.an-hero{position:relative;overflow:hidden;border-radius:0 0 30px 30px}
+.an-hero .an-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:28px;
+  min-height:min(76vh,620px);padding-block:clamp(36px,6vw,72px)}
+@media(max-width:820px){.an-hero .an-in{grid-template-columns:1fr;min-height:0}}
+.an-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.06;margin:16px 0 0;max-width:16ch;font-weight:300}
+.an-hero p{margin-top:16px;max-width:44ch;font-size:clamp(15.5px,1.5vw,18px)}
+.an-rajz{width:100%;height:auto;overflow:visible}
+/* részecskék */
+.an-rs{background:#0A0F1E;color:#E6EDF7;
+  background-image:radial-gradient(ellipse 55% 60% at 78% 50%,rgba(94,234,212,.13),transparent 70%),
+    linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);
+  background-size:100% 100%,40px 40px,40px 40px}
+.an-rs h1{font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:-.02em}
+.an-rs .kicsi{color:#5EEAD4}
+.an-rs p{color:rgba(230,237,247,.74)}
+.an-rs .btn-p{background:#5EEAD4;color:#0A0F1E}
+.an-rs .btn-s{border-color:rgba(94,234,212,.5);color:#5EEAD4}
+.an-vaszon{display:block;width:100%;aspect-ratio:4/3;touch-action:pan-y;filter:drop-shadow(0 0 5px rgba(94,234,212,.45))}
+@keyframes an-rajzol{to{stroke-dashoffset:0}}
+@keyframes an-elo{to{opacity:.85}}
+@keyframes an-tele{to{opacity:1}}
+@keyframes an-fel{to{transform:none}}
+@keyframes an-be{to{opacity:1;transform:none}}
+@keyframes an-fut{to{transform:translateX(-50%)}}
+@keyframes an-forog{to{transform:rotate(360deg)}}
+@keyframes an-cella{to{opacity:.92}}
+@keyframes an-csillan{0%,100%{opacity:.92}50%{opacity:.62}}
+@keyframes an-rejt{to{opacity:.38}}
+@keyframes an-flip{0%{transform:scaleY(1)}50%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
+@keyframes an-pont{to{transform:scale(1)}}
+@keyframes an-lukte{0%,100%{transform:scale(1)}50%{transform:scale(.72)}}
+@keyframes an-keret{0%{opacity:.1}12%{opacity:1}22%{opacity:.15}34%{opacity:1}44%{opacity:.3}56%,100%{opacity:1}}
+@keyframes an-gyujt{0%{opacity:.13;text-shadow:none}14%{opacity:1;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5}
+  26%{opacity:.18;text-shadow:none}40%,100%{opacity:1;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5,0 0 48px #FF2D95}}
+@keyframes an-varos{0%{opacity:.12}20%{opacity:1}35%{opacity:.2}50%,100%{opacity:1;text-shadow:0 0 5px #2DE2E6,0 0 16px #2DE2E6}}
+@keyframes an-vill{0%{opacity:1}20%{opacity:.25;text-shadow:none}35%{opacity:1}50%{opacity:.4;text-shadow:none}70%,100%{opacity:1}}
+@keyframes an-uszik1{to{transform:translate(38%,32%) scale(1.18)}}
+@keyframes an-uszik2{to{transform:translate(-34%,26%) scale(.9)}}
+@keyframes an-uszik3{to{transform:translate(28%,-36%) scale(1.12)}}
+@keyframes an-csik{0%{transform:translateX(-60%)}45%,100%{transform:translateX(60%)}}
+@keyframes an-eles{to{opacity:.96;filter:blur(0)}}
+@keyframes an-szikra{0%,100%{transform:scale(0) rotate(0)}18%{transform:scale(1) rotate(45deg)}36%{transform:scale(0) rotate(90deg)}}
+@keyframes an-lebeg{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes an-esik{to{opacity:1;transform:none}}
+@keyframes an-pop{to{opacity:1;transform:none}}
+@keyframes an-emel{to{opacity:1;transform:none}}
+@keyframes an-ring{from{transform:translateX(-5px)}to{transform:translateX(5px)}}
+@keyframes an-kurzor{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .an-hero .v,.an-hero .a,.an-hero .sugar{stroke-dashoffset:0!important;animation:none!important}
+  .an-hero .felirat{opacity:.85!important;animation:none!important}
+  .an-hero .tolt,.an-hero .lap,.an-hero .db,.an-hero .arnyek,.an-hero .an-cs,.an-hero .an-uveg,.an-hero .an-nap,
+  .an-hero .an-uv-chip,.an-hero .an-tukor{opacity:1!important;transform:none!important;animation:none!important}
+  .an-hero .cella{opacity:.92!important;animation:none!important} .an-hero .rejt{opacity:.38!important;animation:none!important}
+  .an-hero .aram{display:none}
+  .an-kt h1 .m i,.an-raszter circle{transform:none!important;animation:none!important}
+  .an-betu{opacity:.96!important;filter:none!important;animation:none!important}
+  .an-neon-keret,.an-neon::before,.an-neon-varos{opacity:1!important;animation:none!important}
+  .an-neon-nev b{opacity:1!important;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5!important;animation:none!important}
+  .an-szalag,.an-cella.flip span,.an-bp .nap,.an-folt,.an-foltok i,.an-fenycsik,.an-csillag,.an-bolt,.an-reteg>g,.an-gep i{animation:none!important}
+  .an-reteg{opacity:1!important;transform:none!important;animation:none!important}
+}
+</style>
+<section class="an-hero an-rs" data-stilus="reszecske"><div class="wrap an-in">
+  <div>
+    <div class="kicsi rv">Reklámügynökség · Túrkeve</div>
+    <h1 class="rv">Szolgáltatásaink, munkáink, elérhetőségünk.</h1><p class="rv">Ismerje meg, miben segíthetünk, és vegye fel velünk a kapcsolatot.</p>
+    <div class="gombok rv"><a class="btn btn-p" href="tel:+36703638501">Hívás: +36 70 363 8501</a><a class="btn btn-s" href="#nyitva">Nyitvatartás</a></div>
+  </div>
+  <div class="an-vaszon-keret"><canvas class="an-vaszon" aria-hidden="true"></canvas></div>
+</div></section>
+<script type="application/json" id="an-adat">{"hossz": 15, "sorok": ["ÜDVÖZÖLJÜK", "TÚRKEVE"], "ora": {}, "allvany": false, "villany": false, "szo": "VGD", "forma": "tanyer", "felirat": "VADA Graphic Design", "mag": 31276385, "sator": false, "lap": ["VADA GRAPHIC DESIGN", "Túrkeve", "Tel.: +36 70 363 8501"], "betu": "V"}</script>
+<script>(function () {
+  var hero = document.querySelector(".an-hero"); if (!hero) return;
+  var adat = JSON.parse(document.getElementById("an-adat").textContent);
+  var halk = matchMedia("(prefers-reduced-motion: reduce)").matches, ns = "http://www.w3.org/2000/svg", indulok = [];
+  function elem(sz, nev, a) { var e = document.createElementNS(ns, nev); for (var k in a) e.setAttribute(k, a[k]); sz.appendChild(e); return e; }
+  function kor(c, r) { return "M" + (c[0] + r) + " " + c[1] + " a" + r + " " + r + " 0 1 0 " + (-2 * r) + " 0 a" + r + " " + r + " 0 1 0 " + 2 * r + " 0"; }
+  // izometrikus vetítés: (x, y, z) méter → képpont; x jobbra-le, y balra-le, z fel
+  function Iso(cx, cy, k) {
+    var I = function (x, y, z) { return [+(cx + (x - y) * .866 * k).toFixed(1), +(cy + (x + y) * .5 * k - z * k).toFixed(1)]; };
+    I.ut = function (pts, zar) { return "M" + pts.map(function (p) { return I(p[0], p[1], p[2]).join(" "); }).join(" L") + (zar ? " Z" : ""); };
+    return I;
+  }
+  function burok(p) {   // konvex burok (monoton lánc)
+    p = p.slice().sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; });
+    var cr = function (o, a, b) { return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]); }, lo = [], hi = [];
+    p.forEach(function (q) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); });
+    p.slice().reverse().forEach(function (q) { while (hi.length > 1 && cr(hi[hi.length - 2], hi[hi.length - 1], q) <= 0) hi.pop(); hi.push(q); });
+    return lo.slice(0, -1).concat(hi.slice(0, -1));
+  }
+
+  /* ── részecskék: a név (vagy monogram) pontokból áll össze ── */
+  var cv = hero.querySelector(".an-vaszon");
+  if (cv) (function () {
+    var ctx = cv.getContext("2d"), pk = [], w = 0, h = 0, eger = { x: -999, y: -999 }, latszik = false, fut = false;
+    function celok() {
+      var dpr = Math.min(2, window.devicePixelRatio || 1); w = cv.clientWidth; h = cv.clientHeight; if (!w || !h) return;
+      cv.width = w * dpr; cv.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      var o = document.createElement("canvas"); o.width = w; o.height = h; var oc = o.getContext("2d"), m = h * .46;
+      var betu = function () { oc.font = "700 " + m.toFixed(1) + "px 'Space Grotesk', sans-serif"; };
+      betu(); var sz = oc.measureText(adat.szo).width; if (sz > w * .88) { m *= w * .88 / sz; betu(); }
+      oc.textAlign = "center"; oc.textBaseline = "middle"; oc.fillText(adat.szo, w / 2, h / 2);
+      var px = oc.getImageData(0, 0, w, h).data, t = [];
+      for (var lep = 3; lep < 14; lep++) {
+        t = []; for (var y = 0; y < h; y += lep) for (var x = 0; x < w; x += lep) if (px[(y * w + x) * 4 + 3] > 128) t.push([x, y]);
+        if (t.length <= 1300) break;
+      }
+      for (var i = t.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), c = t[i]; t[i] = t[j]; t[j] = c; }
+      var cel = pk.filter(function (p) { return !p.sz; }), szabad = pk.filter(function (p) { return p.sz; });
+      while (cel.length < t.length) cel.push({ x: Math.random() * w, y: Math.random() * h, vx: 0, vy: 0, f: Math.random() });
+      cel.length = t.length; cel.forEach(function (p, i) { p.tx = t[i][0]; p.ty = t[i][1]; if (halk) { p.x = p.tx; p.y = p.ty; } });
+      while (szabad.length < 90) szabad.push({ sz: 1, x: Math.random() * w, y: Math.random() * h, vx: (Math.random() - .5) * .3, vy: (Math.random() - .5) * .3, f: Math.random() });
+      pk = cel.concat(szabad);
+    }
+    function rajzol() {
+      ctx.clearRect(0, 0, w, h); var ido = performance.now() / 1000;
+      for (var i = 0; i < pk.length; i++) {
+        var p = pk[i];
+        if (p.sz) { p.x = (p.x + p.vx + w) % w; p.y = (p.y + p.vy + h) % h; }
+        else if (!halk) {
+          var cx = p.tx + Math.sin(ido * 1.4 + p.f * 6.28) * .9, cy = p.ty + Math.cos(ido * 1.1 + p.f * 6.28) * .9;
+          p.vx += (cx - p.x) * .014; p.vy += (cy - p.y) * .014;
+          var dx = p.x - eger.x, dy = p.y - eger.y, d2 = dx * dx + dy * dy;
+          if (d2 < 4900) { var e = (4900 - d2) / 4900 * 3 / Math.sqrt(d2 + 1); p.vx += dx * e; p.vy += dy * e; }
+          p.vx *= .85; p.vy *= .85; p.x += p.vx; p.y += p.vy;
+        }
+        ctx.globalAlpha = p.sz ? .35 : .95; ctx.fillStyle = p.f < .16 ? "#A78BFA" : "#5EEAD4";
+        ctx.fillRect(p.x - 1.15, p.y - 1.15, 2.3, 2.3);
+      }
+      if (latszik && !halk) requestAnimationFrame(rajzol); else fut = false;
+    }
+    var start = function () { if (!fut) { fut = true; requestAnimationFrame(rajzol); } };
+    cv.addEventListener("pointermove", function (ev) { var r = cv.getBoundingClientRect(); eger.x = ev.clientX - r.left; eger.y = ev.clientY - r.top; });
+    cv.addEventListener("pointerleave", function () { eger.x = eger.y = -999; });
+    var idoz; addEventListener("resize", function () { clearTimeout(idoz); idoz = setTimeout(function () { celok(); start(); }, 200); });
+    new IntersectionObserver(function (es) { latszik = es[0].isIntersecting; if (latszik && pk.length) start(); }).observe(cv);
+    indulok.push(function () { (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { celok(); start(); }); });
+  })();
+
+  hero.querySelectorAll(".v,.a,.sugar").forEach(function (p) { p.style.setProperty("--len", Math.ceil(p.getTotalLength()) + 1); });
+
+  var sorokEl = hero.querySelector(".an-sorok"), indit = function () {};
+  if (sorokEl) {
+    var JEL = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÖŐÚÜŰ0123456789:-", HS = adat.hossz, cellak = [];
+    var mai = adat.ora[String((new Date().getDay() + 6) % 7)];
+    var harmadik = mai ? [mai === "ZÁRVA" ? "MA ZÁRVA" : "MA " + mai, "FOGLALJON"] : ["FOGLALJON", "KÖZVETLENÜL"];
+    var SOROK = adat.sorok.concat([harmadik[0]]);
+    SOROK.forEach(function () {
+      var s = document.createElement("div"); s.className = "an-sor"; var sc = [];
+      for (var i = 0; i < HS; i++) { var c = document.createElement("div"); c.className = "an-cella ures"; c.innerHTML = "<span> </span>"; s.appendChild(c); sc.push(c); }
+      sorokEl.appendChild(s); cellak.push(sc);
+    });
+    var kitolt = function (t) { t = t.slice(0, HS); var b = Math.floor((HS - t.length) / 2); return (" ".repeat(b) + t + " ".repeat(HS)).slice(0, HS); };
+    var beallit = function (c, j) { c.firstChild.textContent = j; c.classList.toggle("ures", j === " "); };
+    var kiir = function (si, t, kes) {
+      var cel = kitolt(t);
+      cellak[si].forEach(function (c, i) {
+        var v = cel[i];
+        if (halk) { beallit(c, v); return; }
+        if (c.firstChild.textContent === v) return;
+        var l = 0, max = 6 + Math.floor(Math.random() * 8);
+        setTimeout(function tik() {
+          l++; beallit(c, l >= max ? v : JEL[Math.floor(Math.random() * JEL.length)]);
+          c.classList.remove("flip"); void c.offsetWidth; c.classList.add("flip");
+          if (l < max) setTimeout(tik, 70);
+        }, kes + i * 35);
+      });
+    };
+    var valt = 0;
+    indit = function () {
+      SOROK.forEach(function (t, i) { kiir(i, t, i * 260); });
+      if (!halk) setInterval(function () { valt = 1 - valt; kiir(SOROK.length - 1, harmadik[valt], 0); }, 6000);
+    };
+  }
+  var io = new IntersectionObserver(function (es) {
+    if (!es[0].isIntersecting) return;
+    hero.classList.add("fut"); indit(); indulok.forEach(function (f) { f(); }); io.disconnect();
+  }, { threshold: .3 });
+  io.observe(hero);
+})();</script>
+<div class="sav"><div class="wrap sav-in">
+  <div class="si rv"><b>VADA Graphic Design</b><span>Reklámügynökség</span></div>
+  <div class="si rv"><b>Endrédi utca 24, Túrkeve</b><span>cím</span></div>
+  <div class="si rv"><b>+36 70 363 8501</b><span>telefon</span></div>
+</div></div>
+<section id="rolunk" class="sec wrap"><div class="fejlec rv">
+  <div class="kicsi" style="color:var(--fo)">Röviden</div>
+  <h2>Amit nálunk talál.</h2>
+  <p>A végleges szöveg és a fotók az Önök anyagaiból készülnének.</p></div>
+  <div class="blokkok rv"><article class="blokk"><span class="szam">01</span><h3>Szolgáltatások</h3><p>Amit vállalunk, röviden és érthetően.</p></article><article class="blokk"><span class="szam">02</span><h3>Referenciák</h3><p>Korábbi munkáink, fotókkal.</p></article><article class="blokk"><span class="szam">03</span><h3>Kapcsolat</h3><p>Telefon, e-mail, címünk.</p></article></div></section>
+<section id="nyitva" class="sec wrap" style="padding-top:0"><div class="ket">
+  <div class="fejlec rv"><div class="kicsi" style="color:var(--fo)">Nyitvatartás</div>
+    <h2>Mikor vagyunk elérhetők.</h2><p>Ezt az adatot Önöktől kérnénk el.</p></div>
+  <div class="ora rv"><div class="hianyzik">A nyitvatartás ide kerül (ezt Önöktől kérnénk el).</div></div></div>
+  <div class="galeria rv"><div class="hianyzik" style="grid-column:1/-1">Ide az Önök fotói kerülnek.</div></div></section>
+<section id="kapcsolat" class="sec wrap" style="padding-top:0"><div class="kapcs-doboz rv">
+  <div><div class="kicsi" style="color:var(--fo)">Kapcsolat</div><h2>VADA Graphic Design</h2>
+    <p style="color:var(--halvany);margin-top:12px"></p>
+    <div class="adat"><div><div class="cimke">Cím</div><div>Endrédi utca 24, Túrkeve</div></div>
+      <div><div class="cimke">Telefon</div><div><a href="tel:+36703638501">+36 70 363 8501</a></div></div>
+    </div></div><div><a class="terkep" href="https://www.openstreetmap.org/?mlat=47.0993014&amp;mlon=20.7296796#map=17/47.0993014/20.7296796" target="_blank" rel="noopener" data-src="https://www.openstreetmap.org/export/embed.html?bbox=20.7256796%2C47.095301400000004%2C20.733679600000002%2C47.1033014&amp;layer=mapnik&amp;marker=47.0993014%2C20.7296796" style="display:grid;place-content:center;gap:6px;text-align:center;text-decoration:none;color:inherit;background:rgba(127,127,127,.14);filter:none;cursor:pointer;font:inherit" onclick="var f=document.createElement('iframe');f.className='terkep';f.title='Térkép';f.src=this.dataset.src;this.replaceWith(f);return false"><strong>Térkép megjelenítése</strong><small style="opacity:.7">Kattintásra betölt az OpenStreetMapről</small></a></div></div></section>
+<footer><div class="wrap">Mintaoldal · VADA Graphic Design · a fotók illusztrációk.</div></footer>
+<script>
+const h=document.getElementById('hdr');const g=()=>h.classList.toggle('stuck',scrollY>8);
+addEventListener('scroll',g,{passive:true});g();
+const halk=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const el=[...document.querySelectorAll('.rv')];
+document.querySelectorAll('.hero .rv,.sav .rv').forEach((x,i)=>halk?x.classList.add('in'):setTimeout(()=>x.classList.add('in'),i*45));
+if(halk)el.forEach(x=>x.classList.add('in'));else{const io=new IntersectionObserver(es=>{es.filter(y=>y.isIntersecting).forEach((y,i)=>{setTimeout(()=>y.target.classList.add('in'),Math.min(i,5)*55);io.unobserve(y.target);});},{rootMargin:'-40px 0px -60px',threshold:.08});el.forEach(x=>io.observe(x));}
+</script></body></html>
