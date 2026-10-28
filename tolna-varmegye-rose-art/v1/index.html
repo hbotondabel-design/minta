@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="hu"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Rose Art — mintaoldal · 1. változat</title>
+<link href="../../_fonts/fonts.css" rel="stylesheet"><style>
+:root{--fo:#1D5C4A;--hatter:#F7F6F3;--kartya:#FFFFFF;--tinta:#12181B;
+      --halvany:#77828A;--vonal:#E5E3DD;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--hatter);color:var(--tinta);line-height:1.62;font-size:16.5px;
+  font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Sora', system-ui, sans-serif;font-weight:400;letter-spacing:-.02em;margin:0}
+p{margin:0} img{max-width:100%;display:block} a{color:inherit}
+.szalag{background:var(--tinta);color:var(--hatter);font-size:13px;padding:9px 16px;text-align:center}
+.szalag b{font-weight:600} .szalag a{color:inherit;opacity:.8}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--hatter) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.stuck{border-bottom-color:var(--vonal)}
+.hbar{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:'Sora', system-ui, sans-serif;font-size:20px;font-weight:500;letter-spacing:-.02em}
+.nav{display:flex;gap:24px} .nav a{font-size:14.5px;text-decoration:none;color:var(--halvany)}
+.nav a:hover{color:var(--tinta)}
+@media(max-width:760px){.nav{display:none}}
+@media(max-width:680px){header .btn{display:none} .logo{font-size:18px} .hbar{height:62px}}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;
+  font:500 15px Inter,sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent;
+  transition:transform .16s var(--ease),background-color .25s,color .25s,border-color .25s}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--fo);color:#fff} .btn-p:hover{filter:brightness(1.12)}
+.btn-s{border-color:var(--vonal);color:var(--tinta)} .btn-s:hover{border-color:var(--tinta)}
+.hero{position:relative;min-height:min(76vh,620px);display:flex;align-items:flex-end;
+  overflow:hidden;border-radius:0 0 30px 30px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(12,8,6,.84) 0%,rgba(12,8,6,.58) 40%,rgba(12,8,6,.1) 72%,transparent 90%),
+             linear-gradient(180deg,rgba(12,8,6,.3),transparent 34%,rgba(12,8,6,.45))}
+.hero-t{position:relative;z-index:2;color:#fff;padding-bottom:clamp(34px,6vw,64px);width:100%}
+.kicsi{font:500 11.5px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
+.hero h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:16px 0 0;max-width:16ch;font-weight:300}
+.hero p{margin-top:16px;max-width:44ch;color:rgba(255,255,255,.86);font-size:clamp(15.5px,1.5vw,18px)}
+.gombok{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}
+.hero .btn-s{border-color:rgba(255,255,255,.45);color:#fff}
+.sav{background:var(--kartya);border-bottom:1px solid var(--vonal)}
+.sav-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;padding:26px 24px}
+.si b{display:block;font-family:'Sora', system-ui, sans-serif;font-size:17px;font-weight:500}
+.si span{font-size:14px;color:var(--halvany)}
+section{scroll-margin-top:80px} .sec{padding-block:clamp(56px,8vw,96px)}
+.fejlec{max-width:56ch;margin-bottom:clamp(26px,4vw,44px)}
+.fejlec h2{font-size:clamp(26px,3.6vw,40px);line-height:1.12;margin:12px 0 14px;font-weight:300}
+.fejlec p{color:var(--halvany)}
+.blokkok{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.blokk{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:24px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.blokk:hover{transform:translateY(-3px);box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.szam{font-family:'Sora', system-ui, sans-serif;font-size:13px;color:var(--fo);font-weight:500}
+.blokk h3{font-size:20px;margin:10px 0 8px} .blokk p{color:var(--halvany);font-size:14.8px}
+.ket{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,46px);align-items:start}
+@media(max-width:820px){.ket{grid-template-columns:1fr}}
+.ora{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:26px}
+.ora-sor{display:flex;justify-content:space-between;gap:14px;padding:11px 0;
+  border-bottom:1px solid var(--vonal);font-size:15px} .ora-sor:last-child{border-bottom:0}
+.hianyzik{border:1px dashed var(--vonal);border-radius:14px;padding:16px 18px;color:var(--halvany);
+  font-size:14.5px;background:color-mix(in srgb,var(--fo) 4%,transparent)}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.gk{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:4/3}
+.gk img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gk:hover img{transform:scale(1.05)}
+.kapcs-doboz{background:var(--kartya);border:1px solid var(--vonal);border-radius:20px;
+  padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px)}
+@media(max-width:820px){.kapcs-doboz{grid-template-columns:1fr}}
+.adat{display:grid;gap:14px;margin-top:22px}
+.adat .cimke{font:500 11.5px Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--halvany)}
+.adat a{color:var(--fo);text-decoration:none}
+.terkep{border:0;width:100%;height:100%;min-height:260px;border-radius:14px}
+footer{border-top:1px solid var(--vonal);padding:34px 0 70px;color:var(--halvany);font-size:13.5px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<div class="szalag">Ez egy <b>mintaoldal</b>, nem a Rose Art hivatalos oldala. Készítette bemutató céllal Horváth Ábel. <a href="../index.html">← másik változat</a></div>
+<header id="hdr"><div class="wrap hbar"><span class="logo">Rose Art</span>
+<nav class="nav"><a href="#rolunk">Rólunk</a><a href="#nyitva">Nyitvatartás</a><a href="#kapcsolat">Kapcsolat</a></nav>
+<a class="btn btn-p" href="tel:+36706130163">Hívás: +36 70 613 0163</a></div></header>
+<style>
+.an-hero{position:relative;overflow:hidden;border-radius:0 0 30px 30px}
+.an-hero .an-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:28px;
+  min-height:min(76vh,620px);padding-block:clamp(36px,6vw,72px)}
+@media(max-width:820px){.an-hero .an-in{grid-template-columns:1fr;min-height:0}}
+.an-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.06;margin:16px 0 0;max-width:16ch;font-weight:300}
+.an-hero p{margin-top:16px;max-width:44ch;font-size:clamp(15.5px,1.5vw,18px)}
+.an-rajz{width:100%;height:auto;overflow:visible}
+/* bolt (agyag-hatású izometrikus) */
+.an-bl{background:#F7EFE6;color:#2E2620}
+.an-bl h1{font-family:Fraunces,Georgia,serif;font-weight:400}
+.an-bl .kicsi{color:var(--fo)}
+.an-bl p{color:#6B5D52}
+.an-boltrajz{max-width:500px;justify-self:center}
+.an-bolt{animation:an-lebeg 7s ease-in-out 2.6s infinite}
+.an-bolt .db{opacity:0;transform:translateY(-34px)}
+.an-bl.fut .an-bolt .db{animation:an-esik .75s cubic-bezier(.34,1.5,.64,1) forwards;animation-delay:calc(var(--i) * 130ms)}
+.an-bolt .arnyek{opacity:0}
+.an-bl.fut .an-bolt .arnyek{animation:an-tele 1s ease .3s forwards}
+@keyframes an-rajzol{to{stroke-dashoffset:0}}
+@keyframes an-elo{to{opacity:.85}}
+@keyframes an-tele{to{opacity:1}}
+@keyframes an-fel{to{transform:none}}
+@keyframes an-be{to{opacity:1;transform:none}}
+@keyframes an-fut{to{transform:translateX(-50%)}}
+@keyframes an-forog{to{transform:rotate(360deg)}}
+@keyframes an-cella{to{opacity:.92}}
+@keyframes an-csillan{0%,100%{opacity:.92}50%{opacity:.62}}
+@keyframes an-rejt{to{opacity:.38}}
+@keyframes an-flip{0%{transform:scaleY(1)}50%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
+@keyframes an-pont{to{transform:scale(1)}}
+@keyframes an-lukte{0%,100%{transform:scale(1)}50%{transform:scale(.72)}}
+@keyframes an-keret{0%{opacity:.1}12%{opacity:1}22%{opacity:.15}34%{opacity:1}44%{opacity:.3}56%,100%{opacity:1}}
+@keyframes an-gyujt{0%{opacity:.13;text-shadow:none}14%{opacity:1;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5}
+  26%{opacity:.18;text-shadow:none}40%,100%{opacity:1;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5,0 0 48px #FF2D95}}
+@keyframes an-varos{0%{opacity:.12}20%{opacity:1}35%{opacity:.2}50%,100%{opacity:1;text-shadow:0 0 5px #2DE2E6,0 0 16px #2DE2E6}}
+@keyframes an-vill{0%{opacity:1}20%{opacity:.25;text-shadow:none}35%{opacity:1}50%{opacity:.4;text-shadow:none}70%,100%{opacity:1}}
+@keyframes an-uszik1{to{transform:translate(38%,32%) scale(1.18)}}
+@keyframes an-uszik2{to{transform:translate(-34%,26%) scale(.9)}}
+@keyframes an-uszik3{to{transform:translate(28%,-36%) scale(1.12)}}
+@keyframes an-csik{0%{transform:translateX(-60%)}45%,100%{transform:translateX(60%)}}
+@keyframes an-eles{to{opacity:.96;filter:blur(0)}}
+@keyframes an-szikra{0%,100%{transform:scale(0) rotate(0)}18%{transform:scale(1) rotate(45deg)}36%{transform:scale(0) rotate(90deg)}}
+@keyframes an-lebeg{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes an-esik{to{opacity:1;transform:none}}
+@keyframes an-pop{to{opacity:1;transform:none}}
+@keyframes an-emel{to{opacity:1;transform:none}}
+@keyframes an-ring{from{transform:translateX(-5px)}to{transform:translateX(5px)}}
+@keyframes an-kurzor{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .an-hero .v,.an-hero .a,.an-hero .sugar{stroke-dashoffset:0!important;animation:none!important}
+  .an-hero .felirat{opacity:.85!important;animation:none!important}
+  .an-hero .tolt,.an-hero .lap,.an-hero .db,.an-hero .arnyek,.an-hero .an-cs,.an-hero .an-uveg,.an-hero .an-nap,
+  .an-hero .an-uv-chip,.an-hero .an-tukor{opacity:1!important;transform:none!important;animation:none!important}
+  .an-hero .cella{opacity:.92!important;animation:none!important} .an-hero .rejt{opacity:.38!important;animation:none!important}
+  .an-hero .aram{display:none}
+  .an-kt h1 .m i,.an-raszter circle{transform:none!important;animation:none!important}
+  .an-betu{opacity:.96!important;filter:none!important;animation:none!important}
+  .an-neon-keret,.an-neon::before,.an-neon-varos{opacity:1!important;animation:none!important}
+  .an-neon-nev b{opacity:1!important;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5!important;animation:none!important}
+  .an-szalag,.an-cella.flip span,.an-bp .nap,.an-folt,.an-foltok i,.an-fenycsik,.an-csillag,.an-bolt,.an-reteg>g,.an-gep i{animation:none!important}
+  .an-reteg{opacity:1!important;transform:none!important;animation:none!important}
+}
+</style>
+<section class="an-hero an-bl" data-stilus="bolt"><div class="wrap an-in">
+  <div>
+    <div class="kicsi rv">Virágbolt · Tolna vármegye</div>
+    <h1 class="rv">Kínálat, nyitvatartás, megközelítés egy helyen.</h1><p class="rv">Nézze meg, mit talál nálunk, és mikor vagyunk nyitva.</p>
+    <div class="gombok rv"><a class="btn btn-p" href="tel:+36706130163">Hívás: +36 70 613 0163</a><a class="btn btn-s" href="#nyitva">Nyitvatartás</a></div>
+  </div>
+  <svg class="an-rajz an-boltrajz" viewBox="0 0 420 330" aria-hidden="true"><g class="an-bolt"></g></svg>
+</div></section>
+<script type="application/json" id="an-adat">{"hossz": 15, "sorok": ["ROSE ART", "TOLNA VÁRMEGYE"], "ora": {"0": "9:00-19:00", "1": "9:00-19:00", "2": "9:00-19:00", "3": "9:00-19:00", "4": "9:00-19:00", "5": "9:00-19:00", "6": "9:00-18:00"}, "allvany": false, "villany": false, "szo": "ROSE ART", "forma": "tanyer", "felirat": "Rose Art", "mag": 1219524116, "sator": false, "lap": ["ROSE ART", "Tolna vármegye", "Tel.: +36 70 613 0163", "", "Nyitvatartás:", "H–Szo 9:00–19:00", "V 9:00–18:00"], "betu": "R"}</script>
+<script>(function () {
+  var hero = document.querySelector(".an-hero"); if (!hero) return;
+  var adat = JSON.parse(document.getElementById("an-adat").textContent);
+  var halk = matchMedia("(prefers-reduced-motion: reduce)").matches, ns = "http://www.w3.org/2000/svg", indulok = [];
+  function elem(sz, nev, a) { var e = document.createElementNS(ns, nev); for (var k in a) e.setAttribute(k, a[k]); sz.appendChild(e); return e; }
+  function kor(c, r) { return "M" + (c[0] + r) + " " + c[1] + " a" + r + " " + r + " 0 1 0 " + (-2 * r) + " 0 a" + r + " " + r + " 0 1 0 " + 2 * r + " 0"; }
+  // izometrikus vetítés: (x, y, z) méter → képpont; x jobbra-le, y balra-le, z fel
+  function Iso(cx, cy, k) {
+    var I = function (x, y, z) { return [+(cx + (x - y) * .866 * k).toFixed(1), +(cy + (x + y) * .5 * k - z * k).toFixed(1)]; };
+    I.ut = function (pts, zar) { return "M" + pts.map(function (p) { return I(p[0], p[1], p[2]).join(" "); }).join(" L") + (zar ? " Z" : ""); };
+    return I;
+  }
+  function burok(p) {   // konvex burok (monoton lánc)
+    p = p.slice().sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; });
+    var cr = function (o, a, b) { return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]); }, lo = [], hi = [];
+    p.forEach(function (q) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); });
+    p.slice().reverse().forEach(function (q) { while (hi.length > 1 && cr(hi[hi.length - 2], hi[hi.length - 1], q) <= 0) hi.pop(); hi.push(q); });
+    return lo.slice(0, -1).concat(hi.slice(0, -1));
+  }
+
+  /* ── agyag-hatású izometrikus bolt ── */
+  var bl = hero.querySelector(".an-bolt");
+  if (bl) (function () {
+    var W = 6, D = 4.2, H = 3.3, I = Iso(205, 115, 28), FO = "var(--fo)";
+    var csop = function (i) { return elem(bl, "g", { "class": "db", style: "--i:" + i }); };
+    var lap = function (g, p, szin, extra) { return elem(g, "path", Object.assign({ d: I.ut(p, 1), style: "fill:" + szin }, extra || {})); };
+    var doboz = function (g, x0, x1, y0, y1, z0, z1, sz) {   // látható 3 lap: +y, +x, teteje
+      lap(g, [[x0, y1, z0], [x1, y1, z0], [x1, y1, z1], [x0, y1, z1]], sz[0]);
+      lap(g, [[x1, y0, z0], [x1, y1, z0], [x1, y1, z1], [x1, y0, z1]], sz[1]);
+      lap(g, [[x0, y0, z1], [x1, y0, z1], [x1, y1, z1], [x0, y1, z1]], sz[2]);
+    };
+    // árnyék + talaj-lap
+    var ak = I(W / 2 + .6, D / 2 + .9, -.5);
+    elem(bl, "ellipse", { "class": "arnyek", cx: ak[0], cy: ak[1] + 10, rx: 210, ry: 56, fill: "rgba(80,50,30,.10)" });
+    doboz(csop(0), -1.3, W + 1.4, -1.2, D + 2.1, -.45, 0, ["#E2CDB8", "#D3BAA2", "#EEDFCF"]);
+    var jarda = csop(0);
+    for (var j = 0; j < 5; j++) lap(jarda, [[4.25, D + .3 + j * .36, .001], [5.35, D + .3 + j * .36, .001], [5.35, D + .6 + j * .36, .001], [4.25, D + .6 + j * .36, .001]], "#E6D5C3");
+    // falak
+    var fal = csop(1);
+    doboz(fal, 0, W, 0, D, 0, H, ["#F6D8C4", "#E9BDA4", "#F9E4D6"]);
+    lap(fal, [[0, D, 0], [W, D, 0], [W, D, .35], [0, D, .35]], "#E7BFA8");
+    lap(fal, [[W, 0, 0], [W, D, 0], [W, D, .35], [W, 0, .35]], "#D9A88E");
+    // kirakat polcokkal és árukkal
+    var kir = csop(2), f = function (x, z) { return [x, D, z]; };
+    lap(kir, [f(.45, .55), f(3.7, .55), f(3.7, 2.35), f(.45, 2.35)], "#FFFFFF");
+    lap(kir, [f(.6, .7), f(3.55, .7), f(3.55, 2.2), f(.6, 2.2)], "#BFE1E6");
+    [1.2, 1.75].forEach(function (z) { lap(kir, [f(.6, z), f(3.55, z), f(3.55, z + .06), f(.6, z + .06)], "#FFFFFF"); });
+    var aru = ["#F2B134", "var(--fo)", "#8CC7A1", "#E86F51", "#7FA7D9"];
+    [[.75, .7, .42], [1.3, .7, .3], [1.75, .7, .5], [2.45, .7, .34], [2.95, .7, .44], [.9, 1.26, .36], [1.5, 1.26, .28], [2.2, 1.26, .4], [2.9, 1.26, .3],
+     [.8, 1.81, .3], [1.4, 1.81, .26], [2.6, 1.81, .32]].forEach(function (a, i) {
+      lap(kir, [f(a[0], a[1]), f(a[0] + .4, a[1]), f(a[0] + .4, a[1] + a[2]), f(a[0], a[1] + a[2])], aru[i % 5]);
+    });
+    lap(kir, [f(.75, 2.2), f(1.35, 2.2), f(2.6, .7), f(2.0, .7)], "rgba(255,255,255,.35)");
+    // ajtó
+    var aj = csop(3);
+    lap(aj, [f(4.2, 0), f(5.4, 0), f(5.4, 2.45), f(4.2, 2.45)], "#FFFFFF");
+    lap(aj, [f(4.32, 0), f(5.28, 0), f(5.28, 2.33), f(4.32, 2.33)], FO);
+    lap(aj, [f(4.5, 1.2), f(5.1, 1.2), f(5.1, 2.1), f(4.5, 2.1)], "#BFE1E6");
+    var kil = I(4.45, D, 1.0); elem(aj, "circle", { cx: kil[0], cy: kil[1], r: 2.6, fill: "#F2B134" });
+    // oldalablak
+    var ob = csop(3), g = function (y, z) { return [W, y, z]; };
+    lap(ob, [g(1.0, 1.0), g(2.8, 1.0), g(2.8, 2.3), g(1.0, 2.3)], "#F5E3D6");
+    lap(ob, [g(1.12, 1.1), g(2.68, 1.1), g(2.68, 2.2), g(1.12, 2.2)], "#A9D3DA");
+    lap(ob, [g(1.9, 1.1), g(1.96, 1.1), g(1.96, 2.2), g(1.9, 2.2)], "#F5E3D6");
+    // tető-perem
+    doboz(csop(4), -.15, W + .15, -.15, D + .15, H, H + .38, ["#EDBFA6", "#DDA88D", "#FFF1E7"]);
+    // cégtábla (a név, izometrikus síkon)
+    var tb = csop(5), ty = D + .2;
+    doboz(tb, .35, W - .35, D + .15, ty, H + .45, H + 1.25, [FO, "#00000033", FO]);
+    lap(tb, [[W - .35, D + .15, H + .45], [W - .35, ty, H + .45], [W - .35, ty, H + 1.25], [W - .35, D + .15, H + 1.25]], "rgba(0,0,0,.25)");
+    var horg = I(.35, ty, H + 1.25), sz = 28, tw = (W - .7) * sz;
+    var tg = elem(tb, "g", { transform: "matrix(.866 .5 0 1 " + horg[0] + " " + horg[1] + ")" });
+    var tx = elem(tg, "text", { x: tw / 2, y: .8 * sz / 2 + 6, "text-anchor": "middle", fill: "#FFF7EE",
+                               style: "font:700 17px 'Space Grotesk',sans-serif;letter-spacing:.06em" });
+    tx.textContent = adat.felirat;
+    indulok.push(function () { try { var h = tx.getComputedTextLength(); if (h > tw * .9) tx.setAttribute("style", tx.getAttribute("style").replace("17px", (17 * tw * .9 / h).toFixed(1) + "px")); } catch (e) {} });
+    // napellenző csíkokkal + fodor
+    var nap = csop(6), x0 = .3, x1 = 3.85, n = 8, za = 2.8, zl = 2.2, yk = D + 1.15;
+    for (var i = 0; i < n; i++) {
+      var a = x0 + (x1 - x0) * i / n, b = x0 + (x1 - x0) * (i + 1) / n;
+      lap(nap, [[a, D, za], [b, D, za], [b, yk, zl], [a, yk, zl]], i % 2 ? "#FFF7EE" : FO);
+      var fod = [[a, yk, zl], [b, yk, zl], [b, yk, zl - .28], [(a + b) / 2, yk, zl - .42], [a, yk, zl - .28]];
+      lap(nap, fod, i % 2 ? "#F1E3D3" : FO, { opacity: i % 2 ? 1 : .85 });
+    }
+    lap(nap, [[x1, D, za], [x1, yk, zl], [x1, yk, zl - .28], [x1, D, za - .1]], "rgba(0,0,0,.18)");
+    // cserepes növények (agyaggolyók)
+    var noveny = function (i, x, y) {
+      var gg = csop(i);
+      doboz(gg, x, x + .55, y, y + .55, 0, .55, ["#D97B55", "#C5673F", "#E99A78"]);
+      [[.28, .28, 1.05, 15], [.1, .45, .85, 11], [.48, .12, .9, 11]].forEach(function (k) {
+        var c = I(x + k[0], y + k[1], k[2]); elem(gg, "circle", { cx: c[0], cy: c[1], r: k[3], fill: "#7DB98A" });
+        elem(gg, "circle", { cx: c[0] - k[3] * .3, cy: c[1] - k[3] * .35, r: k[3] * .38, fill: "#A6D6AF" });
+      });
+    };
+    noveny(7, W + .35, D - .9); noveny(8, -.9, D + .35);
+  })();
+
+  hero.querySelectorAll(".v,.a,.sugar").forEach(function (p) { p.style.setProperty("--len", Math.ceil(p.getTotalLength()) + 1); });
+
+  var sorokEl = hero.querySelector(".an-sorok"), indit = function () {};
+  if (sorokEl) {
+    var JEL = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÖŐÚÜŰ0123456789:-", HS = adat.hossz, cellak = [];
+    var mai = adat.ora[String((new Date().getDay() + 6) % 7)];
+    var harmadik = mai ? [mai === "ZÁRVA" ? "MA ZÁRVA" : "MA " + mai, "FOGLALJON"] : ["FOGLALJON", "KÖZVETLENÜL"];
+    var SOROK = adat.sorok.concat([harmadik[0]]);
+    SOROK.forEach(function () {
+      var s = document.createElement("div"); s.className = "an-sor"; var sc = [];
+      for (var i = 0; i < HS; i++) { var c = document.createElement("div"); c.className = "an-cella ures"; c.innerHTML = "<span> </span>"; s.appendChild(c); sc.push(c); }
+      sorokEl.appendChild(s); cellak.push(sc);
+    });
+    var kitolt = function (t) { t = t.slice(0, HS); var b = Math.floor((HS - t.length) / 2); return (" ".repeat(b) + t + " ".repeat(HS)).slice(0, HS); };
+    var beallit = function (c, j) { c.firstChild.textContent = j; c.classList.toggle("ures", j === " "); };
+    var kiir = function (si, t, kes) {
+      var cel = kitolt(t);
+      cellak[si].forEach(function (c, i) {
+        var v = cel[i];
+        if (halk) { beallit(c, v); return; }
+        if (c.firstChild.textContent === v) return;
+        var l = 0, max = 6 + Math.floor(Math.random() * 8);
+        setTimeout(function tik() {
+          l++; beallit(c, l >= max ? v : JEL[Math.floor(Math.random() * JEL.length)]);
+          c.classList.remove("flip"); void c.offsetWidth; c.classList.add("flip");
+          if (l < max) setTimeout(tik, 70);
+        }, kes + i * 35);
+      });
+    };
+    var valt = 0;
+    indit = function () {
+      SOROK.forEach(function (t, i) { kiir(i, t, i * 260); });
+      if (!halk) setInterval(function () { valt = 1 - valt; kiir(SOROK.length - 1, harmadik[valt], 0); }, 6000);
+    };
+  }
+  var io = new IntersectionObserver(function (es) {
+    if (!es[0].isIntersecting) return;
+    hero.classList.add("fut"); indit(); indulok.forEach(function (f) { f(); }); io.disconnect();
+  }, { threshold: .3 });
+  io.observe(hero);
+})();</script>
+<div class="sav"><div class="wrap sav-in">
+  <div class="si rv"><b>Rose Art</b><span>Virágbolt</span></div>
+  <div class="si rv"><b>Tolna vármegye</b><span>cím</span></div>
+  <div class="si rv"><b>+36 70 613 0163</b><span>telefon</span></div>
+</div></div>
+<section id="rolunk" class="sec wrap"><div class="fejlec rv">
+  <div class="kicsi" style="color:var(--fo)">Röviden</div>
+  <h2>Amit nálunk talál.</h2>
+  <p>A végleges szöveg és a fotók az Önök anyagaiból készülnének.</p></div>
+  <div class="blokkok rv"><article class="blokk"><span class="szam">01</span><h3>Kínálat</h3><p>Termékkörök, márkák, akciók.</p></article><article class="blokk"><span class="szam">02</span><h3>Nyitvatartás</h3><p>Mindig naprakészen, ünnepnapokkal is.</p></article><article class="blokk"><span class="szam">03</span><h3>Megközelítés</h3><p>Térkép, parkolás, bejárat.</p></article></div></section>
+<section id="nyitva" class="sec wrap" style="padding-top:0"><div class="ket">
+  <div class="fejlec rv"><div class="kicsi" style="color:var(--fo)">Nyitvatartás</div>
+    <h2>Nyitvatartás.</h2><p>Ez az adat a nyilvános térképi adatbázisból jött. Ha nem pontos, egy perc javítani.</p></div>
+  <div class="ora rv"><div class="ora-sor"><span>hétfő–szombat</span><b>09:00-19:00</b></div><div class="ora-sor"><span>vasárnap</span><b>09:00-18:00</b></div><div class="ora-sor"><span>ünnepnap</span><b>zárva</b></div></div></div>
+  <div class="galeria rv"><figure class="gk"><img src="../../img/bolt-2.jpg" alt="" loading="lazy"></figure></div></section>
+<section id="kapcsolat" class="sec wrap" style="padding-top:0"><div class="kapcs-doboz rv">
+  <div><div class="kicsi" style="color:var(--fo)">Kapcsolat</div><h2>Rose Art</h2>
+    <p style="color:var(--halvany);margin-top:12px"></p>
+    <div class="adat"><div><div class="cimke">Cím</div><div>Tolna vármegye</div></div>
+      <div><div class="cimke">Telefon</div><div><a href="tel:+36706130163">+36 70 613 0163</a></div></div>
+    </div></div><div><a class="terkep" href="https://www.openstreetmap.org/?mlat=46.3309811&amp;mlon=18.7058943#map=17/46.3309811/18.7058943" target="_blank" rel="noopener" data-src="https://www.openstreetmap.org/export/embed.html?bbox=18.7018943%2C46.326981100000005%2C18.709894300000002%2C46.3349811&amp;layer=mapnik&amp;marker=46.3309811%2C18.7058943" style="display:grid;place-content:center;gap:6px;text-align:center;text-decoration:none;color:inherit;background:rgba(127,127,127,.14);filter:none;cursor:pointer;font:inherit" onclick="var f=document.createElement('iframe');f.className='terkep';f.title='Térkép';f.src=this.dataset.src;this.replaceWith(f);return false"><strong>Térkép megjelenítése</strong><small style="opacity:.7">Kattintásra betölt az OpenStreetMapről</small></a></div></div></section>
+<footer><div class="wrap">Mintaoldal · Rose Art · a fotók illusztrációk.</div></footer>
+<script>
+const h=document.getElementById('hdr');const g=()=>h.classList.toggle('stuck',scrollY>8);
+addEventListener('scroll',g,{passive:true});g();
+const halk=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const el=[...document.querySelectorAll('.rv')];
+document.querySelectorAll('.hero .rv,.sav .rv').forEach((x,i)=>halk?x.classList.add('in'):setTimeout(()=>x.classList.add('in'),i*45));
+if(halk)el.forEach(x=>x.classList.add('in'));else{const io=new IntersectionObserver(es=>{es.filter(y=>y.isIntersecting).forEach((y,i)=>{setTimeout(()=>y.target.classList.add('in'),Math.min(i,5)*55);io.unobserve(y.target);});},{rootMargin:'-40px 0px -60px',threshold:.08});el.forEach(x=>io.observe(x));}
+</script></body></html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="hu"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mizse-Plast Kft. — mintaoldal · 1. változat</title>
+<link href="../../_fonts/fonts.css" rel="stylesheet"><style>
+:root{--fo:#2A4A6B;--hatter:#F7F7F5;--kartya:#FFFFFF;--tinta:#15191D;
+      --halvany:#737C85;--vonal:#E4E4E0;--ease:cubic-bezier(.23,1,.32,1)}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--hatter);color:var(--tinta);line-height:1.62;font-size:16.5px;
+  font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Sora', system-ui, sans-serif;font-weight:400;letter-spacing:-.02em;margin:0}
+p{margin:0} img{max-width:100%;display:block} a{color:inherit}
+.szalag{background:var(--tinta);color:var(--hatter);font-size:13px;padding:9px 16px;text-align:center}
+.szalag b{font-weight:600} .szalag a{color:inherit;opacity:.8}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--hatter) 88%,transparent);
+  backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.stuck{border-bottom-color:var(--vonal)}
+.hbar{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-family:'Sora', system-ui, sans-serif;font-size:20px;font-weight:500;letter-spacing:-.02em}
+.nav{display:flex;gap:24px} .nav a{font-size:14.5px;text-decoration:none;color:var(--halvany)}
+.nav a:hover{color:var(--tinta)}
+@media(max-width:760px){.nav{display:none}}
+@media(max-width:680px){header .btn{display:none} .logo{font-size:18px} .hbar{height:62px}}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:13px 22px;
+  font:500 15px Inter,sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent;
+  transition:transform .16s var(--ease),background-color .25s,color .25s,border-color .25s}
+.btn:active{transform:scale(.97)}
+.btn-p{background:var(--fo);color:#fff} .btn-p:hover{filter:brightness(1.12)}
+.btn-s{border-color:var(--vonal);color:var(--tinta)} .btn-s:hover{border-color:var(--tinta)}
+.hero{position:relative;min-height:min(76vh,620px);display:flex;align-items:flex-end;
+  overflow:hidden;border-radius:0 0 30px 30px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(12,8,6,.84) 0%,rgba(12,8,6,.58) 40%,rgba(12,8,6,.1) 72%,transparent 90%),
+             linear-gradient(180deg,rgba(12,8,6,.3),transparent 34%,rgba(12,8,6,.45))}
+.hero-t{position:relative;z-index:2;color:#fff;padding-bottom:clamp(34px,6vw,64px);width:100%}
+.kicsi{font:500 11.5px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;opacity:.82}
+.hero h1{font-size:clamp(34px,6vw,64px);line-height:1.05;margin:16px 0 0;max-width:16ch;font-weight:300}
+.hero p{margin-top:16px;max-width:44ch;color:rgba(255,255,255,.86);font-size:clamp(15.5px,1.5vw,18px)}
+.gombok{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}
+.hero .btn-s{border-color:rgba(255,255,255,.45);color:#fff}
+.sav{background:var(--kartya);border-bottom:1px solid var(--vonal)}
+.sav-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px;padding:26px 24px}
+.si b{display:block;font-family:'Sora', system-ui, sans-serif;font-size:17px;font-weight:500}
+.si span{font-size:14px;color:var(--halvany)}
+section{scroll-margin-top:80px} .sec{padding-block:clamp(56px,8vw,96px)}
+.fejlec{max-width:56ch;margin-bottom:clamp(26px,4vw,44px)}
+.fejlec h2{font-size:clamp(26px,3.6vw,40px);line-height:1.12;margin:12px 0 14px;font-weight:300}
+.fejlec p{color:var(--halvany)}
+.blokkok{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.blokk{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:24px;
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.blokk:hover{transform:translateY(-3px);box-shadow:0 18px 40px -30px rgba(0,0,0,.5)}
+.szam{font-family:'Sora', system-ui, sans-serif;font-size:13px;color:var(--fo);font-weight:500}
+.blokk h3{font-size:20px;margin:10px 0 8px} .blokk p{color:var(--halvany);font-size:14.8px}
+.ket{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,46px);align-items:start}
+@media(max-width:820px){.ket{grid-template-columns:1fr}}
+.ora{background:var(--kartya);border:1px solid var(--vonal);border-radius:18px;padding:26px}
+.ora-sor{display:flex;justify-content:space-between;gap:14px;padding:11px 0;
+  border-bottom:1px solid var(--vonal);font-size:15px} .ora-sor:last-child{border-bottom:0}
+.hianyzik{border:1px dashed var(--vonal);border-radius:14px;padding:16px 18px;color:var(--halvany);
+  font-size:14.5px;background:color-mix(in srgb,var(--fo) 4%,transparent)}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:20px}
+.gk{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:4/3}
+.gk img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gk:hover img{transform:scale(1.05)}
+.kapcs-doboz{background:var(--kartya);border:1px solid var(--vonal);border-radius:20px;
+  padding:clamp(26px,4vw,44px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,44px)}
+@media(max-width:820px){.kapcs-doboz{grid-template-columns:1fr}}
+.adat{display:grid;gap:14px;margin-top:22px}
+.adat .cimke{font:500 11.5px Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--halvany)}
+.adat a{color:var(--fo);text-decoration:none}
+.terkep{border:0;width:100%;height:100%;min-height:260px;border-radius:14px}
+footer{border-top:1px solid var(--vonal);padding:34px 0 70px;color:var(--halvany);font-size:13.5px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style></head><body>
+<div class="szalag">Ez egy <b>mintaoldal</b>, nem a Mizse-Plast Kft. hivatalos oldala. Készítette bemutató céllal Horváth Ábel. <a href="../index.html">← másik változat</a></div>
+<header id="hdr"><div class="wrap hbar"><span class="logo">Mizse-Plast Kft.</span>
+<nav class="nav"><a href="#rolunk">Rólunk</a><a href="#nyitva">Nyitvatartás</a><a href="#kapcsolat">Kapcsolat</a></nav>
+<a class="btn btn-p" href="tel:+3676457155">Hívás: +3676457155</a></div></header>
+<style>
+.an-hero{position:relative;overflow:hidden;border-radius:0 0 30px 30px}
+.an-hero .an-in{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:28px;
+  min-height:min(76vh,620px);padding-block:clamp(36px,6vw,72px)}
+@media(max-width:820px){.an-hero .an-in{grid-template-columns:1fr;min-height:0}}
+.an-hero h1{font-size:clamp(32px,5vw,56px);line-height:1.06;margin:16px 0 0;max-width:16ch;font-weight:300}
+.an-hero p{margin-top:16px;max-width:44ch;font-size:clamp(15.5px,1.5vw,18px)}
+.an-rajz{width:100%;height:auto;overflow:visible}
+/* bauhaus */
+.an-bh{background:#F3EEE3;color:#141414}
+.an-bh h1{font-family:'Space Grotesk',sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1}
+.an-bh .kicsi{color:#E63946}
+.an-bh p{color:#4A4740}
+.an-bh .btn-p{background:#141414;color:#F3EEE3}
+.an-bh .btn-s{border-color:#141414;color:#141414}
+.an-bau{display:grid;grid-template-columns:repeat(4,1fr);width:min(100%,440px);aspect-ratio:1;justify-self:center;
+  border:3px solid #141414;background:#141414;gap:3px}
+.an-cs{position:relative;overflow:hidden;opacity:0;transform:scale(.4) rotate(-12deg)}
+.an-bh.fut .an-cs{animation:an-pop .6s cubic-bezier(.34,1.56,.64,1) forwards;animation-delay:calc(var(--i) * 55ms)}
+.an-f{position:absolute;inset:0;transition:transform .9s cubic-bezier(.65,0,.35,1),clip-path .9s cubic-bezier(.65,0,.35,1)}
+.an-f.kor{clip-path:circle(38% at 50% 50%)} .an-f.felkor{clip-path:circle(50% at 50% 0)}
+.an-f.negyed{clip-path:circle(100% at 0 0)} .an-f.pont{clip-path:circle(13% at 50% 50%)}
+.an-f.haromszog{clip-path:polygon(0 0,100% 100%,0 100%)} .an-f.fel{clip-path:polygon(0 0,100% 0,100% 50%,0 50%)}
+.an-f.csik{background:repeating-linear-gradient(90deg,var(--sz) 0 12.5%,transparent 12.5% 25%)!important}
+.an-f.betu{display:grid;place-items:center;background:none!important;color:var(--sz);font:700 clamp(44px,7vw,92px)/1 'Space Grotesk',sans-serif}
+@keyframes an-rajzol{to{stroke-dashoffset:0}}
+@keyframes an-elo{to{opacity:.85}}
+@keyframes an-tele{to{opacity:1}}
+@keyframes an-fel{to{transform:none}}
+@keyframes an-be{to{opacity:1;transform:none}}
+@keyframes an-fut{to{transform:translateX(-50%)}}
+@keyframes an-forog{to{transform:rotate(360deg)}}
+@keyframes an-cella{to{opacity:.92}}
+@keyframes an-csillan{0%,100%{opacity:.92}50%{opacity:.62}}
+@keyframes an-rejt{to{opacity:.38}}
+@keyframes an-flip{0%{transform:scaleY(1)}50%{transform:scaleY(.15)}100%{transform:scaleY(1)}}
+@keyframes an-pont{to{transform:scale(1)}}
+@keyframes an-lukte{0%,100%{transform:scale(1)}50%{transform:scale(.72)}}
+@keyframes an-keret{0%{opacity:.1}12%{opacity:1}22%{opacity:.15}34%{opacity:1}44%{opacity:.3}56%,100%{opacity:1}}
+@keyframes an-gyujt{0%{opacity:.13;text-shadow:none}14%{opacity:1;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5}
+  26%{opacity:.18;text-shadow:none}40%,100%{opacity:1;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5,0 0 48px #FF2D95}}
+@keyframes an-varos{0%{opacity:.12}20%{opacity:1}35%{opacity:.2}50%,100%{opacity:1;text-shadow:0 0 5px #2DE2E6,0 0 16px #2DE2E6}}
+@keyframes an-vill{0%{opacity:1}20%{opacity:.25;text-shadow:none}35%{opacity:1}50%{opacity:.4;text-shadow:none}70%,100%{opacity:1}}
+@keyframes an-uszik1{to{transform:translate(38%,32%) scale(1.18)}}
+@keyframes an-uszik2{to{transform:translate(-34%,26%) scale(.9)}}
+@keyframes an-uszik3{to{transform:translate(28%,-36%) scale(1.12)}}
+@keyframes an-csik{0%{transform:translateX(-60%)}45%,100%{transform:translateX(60%)}}
+@keyframes an-eles{to{opacity:.96;filter:blur(0)}}
+@keyframes an-szikra{0%,100%{transform:scale(0) rotate(0)}18%{transform:scale(1) rotate(45deg)}36%{transform:scale(0) rotate(90deg)}}
+@keyframes an-lebeg{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes an-esik{to{opacity:1;transform:none}}
+@keyframes an-pop{to{opacity:1;transform:none}}
+@keyframes an-emel{to{opacity:1;transform:none}}
+@keyframes an-ring{from{transform:translateX(-5px)}to{transform:translateX(5px)}}
+@keyframes an-kurzor{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .an-hero .v,.an-hero .a,.an-hero .sugar{stroke-dashoffset:0!important;animation:none!important}
+  .an-hero .felirat{opacity:.85!important;animation:none!important}
+  .an-hero .tolt,.an-hero .lap,.an-hero .db,.an-hero .arnyek,.an-hero .an-cs,.an-hero .an-uveg,.an-hero .an-nap,
+  .an-hero .an-uv-chip,.an-hero .an-tukor{opacity:1!important;transform:none!important;animation:none!important}
+  .an-hero .cella{opacity:.92!important;animation:none!important} .an-hero .rejt{opacity:.38!important;animation:none!important}
+  .an-hero .aram{display:none}
+  .an-kt h1 .m i,.an-raszter circle{transform:none!important;animation:none!important}
+  .an-betu{opacity:.96!important;filter:none!important;animation:none!important}
+  .an-neon-keret,.an-neon::before,.an-neon-varos{opacity:1!important;animation:none!important}
+  .an-neon-nev b{opacity:1!important;text-shadow:0 0 3px #fff,0 0 10px #FF5CB4,0 0 24px #FF3EA5!important;animation:none!important}
+  .an-szalag,.an-cella.flip span,.an-bp .nap,.an-folt,.an-foltok i,.an-fenycsik,.an-csillag,.an-bolt,.an-reteg>g,.an-gep i{animation:none!important}
+  .an-reteg{opacity:1!important;transform:none!important;animation:none!important}
+}
+</style>
+<section class="an-hero an-bh" data-stilus="bauhaus"><div class="wrap an-in">
+  <div>
+    <div class="kicsi rv">Cég · Lajosmizse</div>
+    <h1 class="rv">Szolgáltatásaink, munkáink, elérhetőségünk.</h1><p class="rv">Ismerje meg, miben segíthetünk, és vegye fel velünk a kapcsolatot.</p>
+    <div class="gombok rv"><a class="btn btn-p" href="tel:+3676457155">Hívás: +3676457155</a><a class="btn btn-s" href="#nyitva">Nyitvatartás</a></div>
+  </div>
+  <div class="an-bau" aria-hidden="true"></div>
+</div></section>
+<script type="application/json" id="an-adat">{"hossz": 15, "sorok": ["ÜDVÖZÖLJÜK", "LAJOSMIZSE"], "ora": {"0": "6:00-16:30", "1": "6:00-16:30", "2": "6:00-16:30", "3": "6:00-16:30", "4": "6:00-16:30"}, "allvany": false, "villany": false, "szo": "MP", "forma": "tanyer", "felirat": "Mizse-Plast Kft.", "mag": 962996749, "sator": false, "lap": ["MIZSE-PLAST KFT.", "Lajosmizse", "Tel.: +3676457155", "", "Nyitvatartás:", "H–P 6:00–16:30"], "betu": "M"}</script>
+<script>(function () {
+  var hero = document.querySelector(".an-hero"); if (!hero) return;
+  var adat = JSON.parse(document.getElementById("an-adat").textContent);
+  var halk = matchMedia("(prefers-reduced-motion: reduce)").matches, ns = "http://www.w3.org/2000/svg", indulok = [];
+  function elem(sz, nev, a) { var e = document.createElementNS(ns, nev); for (var k in a) e.setAttribute(k, a[k]); sz.appendChild(e); return e; }
+  function kor(c, r) { return "M" + (c[0] + r) + " " + c[1] + " a" + r + " " + r + " 0 1 0 " + (-2 * r) + " 0 a" + r + " " + r + " 0 1 0 " + 2 * r + " 0"; }
+  // izometrikus vetítés: (x, y, z) méter → képpont; x jobbra-le, y balra-le, z fel
+  function Iso(cx, cy, k) {
+    var I = function (x, y, z) { return [+(cx + (x - y) * .866 * k).toFixed(1), +(cy + (x + y) * .5 * k - z * k).toFixed(1)]; };
+    I.ut = function (pts, zar) { return "M" + pts.map(function (p) { return I(p[0], p[1], p[2]).join(" "); }).join(" L") + (zar ? " Z" : ""); };
+    return I;
+  }
+  function burok(p) {   // konvex burok (monoton lánc)
+    p = p.slice().sort(function (a, b) { return a[0] - b[0] || a[1] - b[1]; });
+    var cr = function (o, a, b) { return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]); }, lo = [], hi = [];
+    p.forEach(function (q) { while (lo.length > 1 && cr(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); });
+    p.slice().reverse().forEach(function (q) { while (hi.length > 1 && cr(hi[hi.length - 2], hi[hi.length - 1], q) <= 0) hi.pop(); hi.push(q); });
+    return lo.slice(0, -1).concat(hi.slice(0, -1));
+  }
+
+  /* ── bauhaus: 4×4 forma-rács, időnként egy-egy lap elfordul vagy formát vált ── */
+  var bh = hero.querySelector(".an-bau");
+  if (bh) (function () {
+    var SZ = ["#E63946", "#F4B400", "#1D4E89", "#141414", "#F3EEE3"], FORMA = ["kor", "felkor", "negyed", "haromszog", "fel", "csik", "pont"];
+    var mag = adat.mag >>> 0, rnd = function () { mag = (mag + 0x6D2B79F5) >>> 0; var t = mag; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+    var lapok = [];
+    for (var i = 0; i < 16; i++) {
+      var hat = SZ[Math.floor(rnd() * 5)], elo; do { elo = SZ[Math.floor(rnd() * 5)]; } while (elo === hat);
+      var cs = document.createElement("div"); cs.className = "an-cs"; cs.style.cssText = "--i:" + i + ";background:" + hat;
+      var f = document.createElement("div"), forma = i === 5 ? "betu" : FORMA[Math.floor(rnd() * FORMA.length)], fok = Math.floor(rnd() * 4) * 90;
+      f.className = "an-f " + forma; f.style.cssText = "--sz:" + elo + ";background:" + elo;
+      if (forma === "betu") { f.textContent = adat.betu; fok = 0; } else f.style.transform = "rotate(" + fok + "deg)";
+      f.dataset.r = fok; cs.appendChild(f); bh.appendChild(cs); lapok.push(f);
+    }
+    if (!halk) indulok.push(function () {
+      setTimeout(function () {
+        var kor2 = 0;
+        setInterval(function () {
+          var f = lapok[Math.floor(Math.random() * 16)]; if (f.classList.contains("betu")) return;
+          if (++kor2 % 3 === 0) { f.className = "an-f " + FORMA[Math.floor(Math.random() * FORMA.length)]; }
+          else { f.dataset.r = +f.dataset.r + 90; f.style.transform = "rotate(" + f.dataset.r + "deg)"; }
+        }, 1700);
+      }, 1800);
+    });
+  })();
+
+  hero.querySelectorAll(".v,.a,.sugar").forEach(function (p) { p.style.setProperty("--len", Math.ceil(p.getTotalLength()) + 1); });
+
+  var sorokEl = hero.querySelector(".an-sorok"), indit = function () {};
+  if (sorokEl) {
+    var JEL = " ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÖŐÚÜŰ0123456789:-", HS = adat.hossz, cellak = [];
+    var mai = adat.ora[String((new Date().getDay() + 6) % 7)];
+    var harmadik = mai ? [mai === "ZÁRVA" ? "MA ZÁRVA" : "MA " + mai, "FOGLALJON"] : ["FOGLALJON", "KÖZVETLENÜL"];
+    var SOROK = adat.sorok.concat([harmadik[0]]);
+    SOROK.forEach(function () {
+      var s = document.createElement("div"); s.className = "an-sor"; var sc = [];
+      for (var i = 0; i < HS; i++) { var c = document.createElement("div"); c.className = "an-cella ures"; c.innerHTML = "<span> </span>"; s.appendChild(c); sc.push(c); }
+      sorokEl.appendChild(s); cellak.push(sc);
+    });
+    var kitolt = function (t) { t = t.slice(0, HS); var b = Math.floor((HS - t.length) / 2); return (" ".repeat(b) + t + " ".repeat(HS)).slice(0, HS); };
+    var beallit = function (c, j) { c.firstChild.textContent = j; c.classList.toggle("ures", j === " "); };
+    var kiir = function (si, t, kes) {
+      var cel = kitolt(t);
+      cellak[si].forEach(function (c, i) {
+        var v = cel[i];
+        if (halk) { beallit(c, v); return; }
+        if (c.firstChild.textContent === v) return;
+        var l = 0, max = 6 + Math.floor(Math.random() * 8);
+        setTimeout(function tik() {
+          l++; beallit(c, l >= max ? v : JEL[Math.floor(Math.random() * JEL.length)]);
+          c.classList.remove("flip"); void c.offsetWidth; c.classList.add("flip");
+          if (l < max) setTimeout(tik, 70);
+        }, kes + i * 35);
+      });
+    };
+    var valt = 0;
+    indit = function () {
+      SOROK.forEach(function (t, i) { kiir(i, t, i * 260); });
+      if (!halk) setInterval(function () { valt = 1 - valt; kiir(SOROK.length - 1, harmadik[valt], 0); }, 6000);
+    };
+  }
+  var io = new IntersectionObserver(function (es) {
+    if (!es[0].isIntersecting) return;
+    hero.classList.add("fut"); indit(); indulok.forEach(function (f) { f(); }); io.disconnect();
+  }, { threshold: .3 });
+  io.observe(hero);
+})();</script>
+<div class="sav"><div class="wrap sav-in">
+  <div class="si rv"><b>Mizse-Plast Kft.</b><span>Cég</span></div>
+  <div class="si rv"><b>Ceglédi út 71/B, Lajosmizse</b><span>cím</span></div>
+  <div class="si rv"><b>+3676457155</b><span>telefon</span></div>
+</div></div>
+<section id="rolunk" class="sec wrap"><div class="fejlec rv">
+  <div class="kicsi" style="color:var(--fo)">Röviden</div>
+  <h2>Amit nálunk talál.</h2>
+  <p>A végleges szöveg és a fotók az Önök anyagaiból készülnének.</p></div>
+  <div class="blokkok rv"><article class="blokk"><span class="szam">01</span><h3>Szolgáltatások</h3><p>Amit vállalunk, röviden és érthetően.</p></article><article class="blokk"><span class="szam">02</span><h3>Referenciák</h3><p>Korábbi munkáink, fotókkal.</p></article><article class="blokk"><span class="szam">03</span><h3>Kapcsolat</h3><p>Telefon, e-mail, címünk.</p></article></div></section>
+<section id="nyitva" class="sec wrap" style="padding-top:0"><div class="ket">
+  <div class="fejlec rv"><div class="kicsi" style="color:var(--fo)">Nyitvatartás</div>
+    <h2>Mikor vagyunk elérhetők.</h2><p>Ez az adat a nyilvános térképi adatbázisból jött. Ha nem pontos, egy perc javítani.</p></div>
+  <div class="ora rv"><div class="ora-sor"><span>hétfő–péntek</span><b>06:00-16:30</b></div></div></div>
+  <div class="galeria rv"><div class="hianyzik" style="grid-column:1/-1">Ide az Önök fotói kerülnek.</div></div></section>
+<section id="kapcsolat" class="sec wrap" style="padding-top:0"><div class="kapcs-doboz rv">
+  <div><div class="kicsi" style="color:var(--fo)">Kapcsolat</div><h2>Mizse-Plast Kft.</h2>
+    <p style="color:var(--halvany);margin-top:12px"></p>
+    <div class="adat"><div><div class="cimke">Cím</div><div>Ceglédi út 71/B, Lajosmizse</div></div>
+      <div><div class="cimke">Telefon</div><div><a href="tel:+3676457155">+3676457155</a></div></div>
+    </div></div><div><a class="terkep" href="https://www.openstreetmap.org/?mlat=47.0337625&amp;mlon=19.5650512#map=17/47.0337625/19.5650512" target="_blank" rel="noopener" data-src="https://www.openstreetmap.org/export/embed.html?bbox=19.561051199999998%2C47.029762500000004%2C19.5690512%2C47.0377625&amp;layer=mapnik&amp;marker=47.0337625%2C19.5650512" style="display:grid;place-content:center;gap:6px;text-align:center;text-decoration:none;color:inherit;background:rgba(127,127,127,.14);filter:none;cursor:pointer;font:inherit" onclick="var f=document.createElement('iframe');f.className='terkep';f.title='Térkép';f.src=this.dataset.src;this.replaceWith(f);return false"><strong>Térkép megjelenítése</strong><small style="opacity:.7">Kattintásra betölt az OpenStreetMapről</small></a></div></div></section>
+<footer><div class="wrap">Mintaoldal · Mizse-Plast Kft. · a fotók illusztrációk.</div></footer>
+<script>
+const h=document.getElementById('hdr');const g=()=>h.classList.toggle('stuck',scrollY>8);
+addEventListener('scroll',g,{passive:true});g();
+const halk=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const el=[...document.querySelectorAll('.rv')];
+document.querySelectorAll('.hero .rv,.sav .rv').forEach((x,i)=>halk?x.classList.add('in'):setTimeout(()=>x.classList.add('in'),i*45));
+if(halk)el.forEach(x=>x.classList.add('in'));else{const io=new IntersectionObserver(es=>{es.filter(y=>y.isIntersecting).forEach((y,i)=>{setTimeout(()=>y.target.classList.add('in'),Math.min(i,5)*55);io.unobserve(y.target);});},{rootMargin:'-40px 0px -60px',threshold:.08});el.forEach(x=>io.observe(x));}
+</script></body></html>
