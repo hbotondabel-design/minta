@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>aniko photography · három mintaoldal</title>
+<link rel="stylesheet" href="../_lw/valaszto.css">
+</head>
+<body>
+<div class="w">
+  <div class="felso"><b>legwork<i>.</i></b><span>Mintaoldalak · Horváth Ábel</span></div>
+
+  <h1>aniko photography<br><span>három mintaoldal</span></h1>
+  <p class="bev">Kedves Anikó! Három irány ugyanarra a célra: hogy aki rátalál az oldalára, <b>lássa a képeit, és könnyen időpontot kérjen</b>. A fotók és a szövegek egy része a mostani oldaláról jön, így már a saját munkáival látszik, hogyan festene.</p>
+
+  <div class="valtozatok">
+    <a class="v" href="1/">
+      <div class="elonezet" data-elonezet="1/"></div>
+      <div class="test"><span class="szam">1. változat</span><h2>Fénynapló</h2>
+        <p>Világos, levendulás. A közepén egy kalkulátor: a kismama beírja a várható szülés napját, és látja, mikor érdemes kismama- és újszülöttfotózásra jönnie.</p>
+        <p class="kinek"><b>Akkor jó,</b> ha a kismamák és az újszülöttek a fő terület.</p>
+        <span class="nyit">Megnyitás →</span></div>
+    </a>
+    <a class="v" href="2/">
+      <div class="elonezet" data-elonezet="2/"></div>
+      <div class="test"><span class="szam">2. változat</span><h2>Galéria</h2>
+        <p>Sötét háttér, a képek a főszereplők. Témára szűrhető, nagyítható, telefonon húzással lapozható.</p>
+        <p class="kinek"><b>Akkor jó,</b> ha a képek magukért beszélnek, és kevés szöveget szeretne.</p>
+        <span class="nyit">Megnyitás →</span></div>
+    </a>
+    <a class="v" href="3/">
+      <div class="elonezet" data-elonezet="3/"></div>
+      <div class="test"><span class="szam">3. változat</span><h2>Megújult arculat</h2>
+        <p>Megtartja a mostani logót és színeket, de frissebb. Négy kattintásos időpontkérő a régi űrlap helyett, CAPTCHA nélkül.</p>
+        <p class="kinek"><b>Akkor jó,</b> ha az ügyfelei már ismerik a mostani arculatot.</p>
+        <span class="nyit">Megnyitás →</span></div>
+    </a>
+  </div>
+
+  <div class="ket">
+    <div class="doboz">
+      <h3>Ami mindháromban benne van</h3>
+      <ul>
+        <li>Telefonon is kényelmes, gyorsan betöltő oldal</li>
+        <li>A témák egy helyen: kismama, újszülött, baba, család, esküvő, portré</li>
+        <li>Egy érintéses hívás és e-mail</li>
+        <li>Tegező hangnem, ahogy a mostani oldalán is</li>
+      </ul>
+    </div>
+    <div class="doboz sotet">
+      <h3>Jó tudni</h3>
+      <ul>
+        <li>A fotók közvetlenül a mostani oldaláról töltődnek be, nem másoltam át őket sehova.</li>
+        <li>A mintákon az ajánlatkérés csak bemutató, üzenet nem megy el belőle.</li>
+        <li>A szövegeket a végleges változatban közösen írjuk át, ahogy Önnek tetszik.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="zaro">
+    <div><h3>Melyik tetszik?</h3><p>Elég egy rövid válasz, például „az első”, vagy hogy melyikből mit venne át. Utána egy rövid beszélgetésben átnézzük a képeket és a szövegeket. Ezek csak kiindulópontok: színen, szövegen, képeken, felépítésen még bőven lehet változtatni, amíg pont olyan nem lesz, amilyet szeretne.</p></div>
+    <a href="mailto:horvatabel@legwork.hu?subject=aniko%20photography%20mintaoldal">horvatabel@legwork.hu</a>
+  </div>
+
+  <footer>Ezek bemutató oldalak, nem az aniko photography hivatalos oldalai, és a keresők nem indexelik őket.</footer>
+</div>
+<script>
+document.querySelectorAll("[data-elonezet]").forEach((d) => {
+  const u = d.dataset.elonezet;
+  d.innerHTML = `<iframe src="${u}" tabindex="-1" aria-hidden="true" loading="lazy" scrolling="no"></iframe><div class="tel"><iframe src="${u}" tabindex="-1" aria-hidden="true" loading="lazy" scrolling="no"></iframe></div>`;
+  const nagy = d.querySelector(":scope > iframe");
+  const meretez = () => { nagy.style.transform = `scale(${d.clientWidth / 1280})`; };
+  meretez(); new ResizeObserver(meretez).observe(d);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14100E">
+<title>Talizmán · pizza és konyha · Bátaszék (mintaoldal 2.)</title>
+<link rel="stylesheet" href="../../_v2fonts/fonts.css">
+<style>
+:root{--szen:#14100E;--hamu:#211B18;--hamu2:#2D2521;--parazs:#FF6B1A;--parazs2:#FF9A4D;--feny:#F4EDE7;--fakó:#A99B91;--e:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--szen);color:var(--feny);font:400 17px/1.6 Barlow,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--parazs);outline-offset:3px;border-radius:4px}
+.w{max-width:1240px;margin:0 auto;padding:0 20px}
+.k{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.01em;line-height:.9;margin:0}
+.minta{background:#000;color:var(--fakó);font-size:13.5px;text-align:center;padding:7px 16px}
+.minta b,.minta a{color:var(--feny)}
+.fej{position:absolute;left:0;right:0;z-index:5}
+.fej .w{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font:800 26px 'Barlow Condensed';text-transform:uppercase;letter-spacing:.06em;text-decoration:none}
+.logo span{color:var(--parazs)}
+.fej nav{display:flex;gap:26px;font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.08em}
+.fej nav a{text-decoration:none;opacity:.8}
+.fej nav a:hover{opacity:1}
+/* nyitó: a kemence */
+.hos{position:relative;min-height:min(100svh,880px);display:grid;align-items:end;overflow:hidden;isolation:isolate}
+.hos img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%;z-index:-2;transform:scale(1.04)}
+.hos::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,16,14,.55) 0%,rgba(20,16,14,.15) 35%,rgba(20,16,14,.85) 78%,var(--szen) 100%)}
+.izzas{position:absolute;inset:auto 0 0 0;height:60%;z-index:-1;background:radial-gradient(60% 70% at 50% 100%,rgba(255,107,26,.28),transparent 70%);animation:izz 5s ease-in-out infinite alternate;pointer-events:none}
+@keyframes izz{from{opacity:.55}to{opacity:1}}
+.hos .w{padding-bottom:56px;width:100%}
+.hos h1{font-size:clamp(64px,13vw,190px);font-weight:800}
+.hos h1 span{color:var(--parazs);display:block}
+.hos .alcim{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px;margin-top:22px}
+.hos p{font-size:20px;max-width:34ch;margin:0;color:#E6DCD4}
+.elo{display:inline-flex;align-items:center;gap:10px;font:700 15px Barlow;text-transform:uppercase;letter-spacing:.1em;color:var(--parazs2);margin-bottom:18px}
+.elo::before{content:"";width:10px;height:10px;border-radius:50%;background:currentColor;animation:pulz 1.8s ease-in-out infinite}
+.elo.zarva{color:var(--fakó)}
+.elo.zarva::before{animation:none}
+@keyframes pulz{50%{box-shadow:0 0 0 7px rgba(255,154,77,.0),0 0 0 3px rgba(255,154,77,.35)}}
+.hiv{display:inline-flex;flex-direction:column;text-decoration:none;background:var(--parazs);color:#1A0D05;padding:16px 26px 14px;border-radius:4px;transition:transform .2s var(--e),background .2s}
+.hiv:hover{background:var(--parazs2)}
+.hiv:active{transform:scale(.97)}
+.hiv small{font:700 13px Barlow;text-transform:uppercase;letter-spacing:.14em}
+.hiv b{font:800 40px/1 'Barlow Condensed';letter-spacing:.02em}
+/* sáv */
+.sav{border-top:1px solid var(--hamu2);border-bottom:1px solid var(--hamu2);overflow:hidden;white-space:nowrap}
+.sav div{display:inline-flex;gap:46px;padding:18px 0;animation:fut 38s linear infinite;font:700 26px 'Barlow Condensed';text-transform:uppercase;letter-spacing:.04em;color:var(--fakó)}
+.sav i{color:var(--parazs);font-style:normal}
+@keyframes fut{to{transform:translateX(-50%)}}
+/* hogyan rendelsz */
+.szak{padding:96px 0}
+.szak h2{font-size:clamp(48px,7vw,96px);font-weight:800}
+.lepes{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:40px;background:var(--hamu2);border:2px solid var(--hamu2)}
+.lepes div{background:var(--szen);padding:30px 26px 34px}
+.lepes b{font:800 64px/1 'Barlow Condensed';color:var(--parazs);display:block;margin-bottom:12px}
+.lepes h3{font:700 24px 'Barlow Condensed';text-transform:uppercase;letter-spacing:.03em;margin:0 0 8px}
+.lepes p{margin:0;color:var(--fakó)}
+/* pizzák */
+.pizzak{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.lista{list-style:none;margin:28px 0 0;padding:0}
+.lista li{display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--hamu2);transition:padding .3s var(--e),color .3s}
+.lista li:hover{padding-left:10px;color:#fff}
+.lista li:hover .sz{color:var(--parazs)}
+.lista .sz{font:800 18px 'Barlow Condensed';color:var(--fakó);width:28px}
+.lista h3{font:700 30px/1 'Barlow Condensed';text-transform:uppercase;margin:0}
+.lista p{grid-column:2;margin:4px 0 0;color:var(--fakó);font-size:15.5px}
+.lista .ar{font:600 15px Barlow;color:var(--fakó)}
+.pizzak figure{margin:0;position:sticky;top:30px}
+.pizzak figure img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;box-shadow:0 0 0 10px var(--hamu),0 40px 90px -30px rgba(255,107,26,.45)}
+.pizzak figcaption{text-align:center;color:var(--fakó);font-size:13px;margin-top:20px}
+/* nem csak pizza */
+.harom{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.harom figure{margin:0;position:relative;overflow:hidden;border-radius:4px}
+.harom img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .8s var(--e)}
+.harom figure:hover img{transform:scale(1.05)}
+.harom figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 20px 18px;background:linear-gradient(transparent,rgba(20,16,14,.9));font:800 30px 'Barlow Condensed';text-transform:uppercase}
+.harom figcaption small{display:block;font:500 15px Barlow;text-transform:none;color:#DDD2CA}
+/* infó */
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--hamu2);border:2px solid var(--hamu2)}
+.info>div{background:var(--hamu);padding:30px 26px}
+.info h3{font:700 15px Barlow;text-transform:uppercase;letter-spacing:.14em;color:var(--parazs);margin:0 0 14px}
+.info .nagy{font:800 34px/1.05 'Barlow Condensed';text-transform:uppercase;text-decoration:none;display:block}
+.orak{width:100%;border-collapse:collapse;font-size:16px}
+.orak td{padding:4px 0}
+.orak td+td{text-align:right;color:var(--fakó)}
+.orak tr.ma td{color:var(--parazs2);font-weight:700}
+.gomb{display:inline-flex;margin-top:18px;padding:12px 18px;border-radius:4px;border:2px solid var(--feny);font:700 15px Barlow;text-transform:uppercase;letter-spacing:.08em;text-decoration:none}
+.gomb:hover{background:var(--feny);color:var(--szen)}
+footer{padding:44px 0 120px;color:#7D7068;font-size:13.5px}
+footer a{color:#9C8E85}
+.also{position:fixed;left:0;right:0;bottom:0;z-index:20;display:none;grid-template-columns:1fr auto;background:rgba(20,16,14,.96);border-top:1px solid var(--hamu2);padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.also a{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;border-radius:4px;text-decoration:none;font:800 22px 'Barlow Condensed';text-transform:uppercase;letter-spacing:.04em}
+.also a.p{background:var(--parazs);color:#1A0D05}
+.also a.m{color:var(--feny);font-size:18px;padding:14px 16px}
+.be{opacity:0;transform:translateY(22px);transition:opacity .8s var(--e),transform .8s var(--e)}
+.be.l{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.be{opacity:1;transform:none}.sav div,.izzas,.elo::before{animation:none}html{scroll-behavior:auto}}
+@media (max-width:860px){
+  .fej nav{display:none}
+  .hos{min-height:88svh}
+  .hos .w{padding-bottom:34px}
+  .hiv{display:none}
+  .lepes,.info,.harom{grid-template-columns:1fr}
+  .harom img{aspect-ratio:16/11}
+  .pizzak{grid-template-columns:1fr;gap:10px}
+  .pizzak figure{position:static;order:-1;max-width:320px;margin:10px auto 0}
+  .szak{padding:68px 0}
+  .also{display:grid}
+}
+</style>
+</head>
+<body>
+<div class="minta">Ez egy <b>mintaoldal</b>, nem a Talizmán vendéglő hivatalos oldala. Készítette Horváth Ábel (legwork.hu). <a href="../">← Mind a három változat</a></div>
+
+<header class="fej"><div class="w">
+  <a class="logo" href="#">Talizmán<span>.</span></a>
+  <nav aria-label="Fő menü"><a href="#rendeles">Rendelés</a><a href="#pizza">Pizzák</a><a href="#konyha">Konyha</a><a href="#info">Infó</a></nav>
+</div></header>
+
+<main>
+<section class="hos">
+  <img src="../img/kemence-1600.webp" srcset="../img/kemence-800.webp 800w, ../img/kemence-1600.webp 1600w" sizes="100vw" alt="" fetchpriority="high">
+  <div class="izzas" aria-hidden="true"></div>
+  <div class="w">
+    <div class="elo" data-allapot>…</div>
+    <h1 class="k">Forró pizza.<span>Bátaszéken.</span></h1>
+    <div class="alcim">
+      <p>Pizza, gulyás, frissensültek a Bajai úton. Helyben, elvitelre, vagy házhoz kérve.</p>
+      <a class="hiv" href="tel:+3674492590"><small>Rendelés telefonon</small><b>74 492 590</b></a>
+    </div>
+  </div>
+</section>
+
+<div class="sav" aria-hidden="true"><div>
+  <span>Pizza</span><i>✦</i><span>Gulyásleves</span><i>✦</i><span>Rántott szelet</span><i>✦</i><span>Halászlé</span><i>✦</i><span>Harcsapaprikás</span><i>✦</i><span>Elvitelre</span><i>✦</i><span>Házhoz</span><i>✦</i>
+  <span>Pizza</span><i>✦</i><span>Gulyásleves</span><i>✦</i><span>Rántott szelet</span><i>✦</i><span>Halászlé</span><i>✦</i><span>Harcsapaprikás</span><i>✦</i><span>Elvitelre</span><i>✦</i><span>Házhoz</span><i>✦</i>
+</div></div>
+
+<section class="szak" id="rendeles"><div class="w">
+  <h2 class="k be">Így rendelsz</h2>
+  <div class="lepes be">
+    <div><b>1</b><h3>Hívj fel</h3><p>Mondd meg, mit kérsz. Ha nem tudod, segítünk választani.</p></div>
+    <div><b>2</b><h3>Megmondjuk, mikorra</h3><p>Pontos időt kapsz, nem kell a pultnál várnod.</p></div>
+    <div><b>3</b><h3>Elviszed, vagy visszük</h3><p>Átveszed útközben, vagy házhoz kéred a környéken.</p></div>
+  </div>
+</div></section>
+
+<section class="szak" id="pizza" style="padding-top:0"><div class="w pizzak">
+  <div>
+    <h2 class="k be">Pizzák</h2>
+    <ul class="lista be" data-pizzak></ul>
+    <p style="color:var(--fakó);font-size:14.5px;margin-top:18px">Példa-lista. A véglegesbe az Önök teljes pizzakínálata kerül, méretekkel és árakkal.</p>
+  </div>
+  <figure class="be"><img src="../img/pizza-800.webp" alt="Pizza (illusztráció)" loading="lazy"><figcaption>Illusztráció. A kész oldalon a saját pizzáik fotója.</figcaption></figure>
+</div></section>
+
+<section class="szak" id="konyha" style="padding-top:0"><div class="w">
+  <h2 class="k be">Nem csak pizza</h2>
+  <div class="harom be">
+    <figure><img src="../img/gulyas-kint-800.webp" alt="" loading="lazy"><figcaption>Levesek<small>Gulyás, újházi, halászlé</small></figcaption></figure>
+    <figure><img src="../img/rantott-800.webp" alt="" loading="lazy"><figcaption>Frissensültek<small>Rántott, grill, csülök</small></figcaption></figure>
+    <figure><img src="../img/halaszle-800.webp" alt="" loading="lazy"><figcaption>Halételek<small>Harcsa, ponty</small></figcaption></figure>
+  </div>
+</div></section>
+
+<section class="szak" id="info" style="padding-top:0"><div class="w">
+  <div class="info be">
+    <div><h3>Telefon</h3><a class="nagy" href="tel:+3674492590">74 492 590</a><a class="gomb" href="tel:+3674492590">Hívás most</a></div>
+    <div><h3>Nyitvatartás</h3><table class="orak" data-orak aria-label="Nyitvatartás"></table></div>
+    <div><h3>Cím</h3><span class="nagy">Bátaszék,<br>Bajai út 16.</span><a class="gomb" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1972051,18.7278029" target="_blank" rel="noopener">Útvonal</a></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="w">
+  <p>Mintaoldal a Talizmán vendéglő számára. A cím, a telefonszám és a nyitvatartás nyilvános listákból származik, véglegesítés előtt egyeztetjük. A felsorolt fogások példák.</p>
+  <p>Illusztrációk a Wikimedia Commonsról: <span data-forras></span></p>
+</div></footer>
+
+<nav class="also" aria-label="Gyors rendelés">
+  <a class="p" href="tel:+3674492590">Rendelés · 74 492 590</a>
+  <a class="m" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1972051,18.7278029" target="_blank" rel="noopener">Útvonal</a>
+</nav>
+
+<script src="../talizman.js"></script>
+<script>
+(() => {
+  const el = document.querySelector("[data-allapot]");
+  const r = () => {
+    const a = Talizman.most();
+    el.textContent = a.nyitva ? a.szoveg.replace("Most nyitva", "Most sütünk") : a.szoveg;
+    el.classList.toggle("zarva", !a.nyitva);
+  };
+  r(); setInterval(r, 60000);
+})();
+Talizman.orak(document.querySelector("[data-orak]"));
+Talizman.forrasok(document.querySelector("[data-forras]"));
+Talizman.belepo(".be");
+document.querySelector("[data-pizzak]").innerHTML = Talizman.ETLAP.pizza.tetelek
+  .map(([n, l], i) => `<li><span class="sz">${String(i + 1).padStart(2, "0")}</span><div><h3>${n}</h3><p>${l}</p></div><span class="ar">… Ft</span></li>`).join("");
+</script>
+</body>
+</html>

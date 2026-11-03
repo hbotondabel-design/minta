@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Talizmán vendéglő · három mintaoldal</title>
+<link rel="stylesheet" href="../_lw/valaszto.css">
+</head>
+<body>
+<div class="w">
+  <div class="felso"><b>legwork<i>.</i></b><span>Mintaoldalak · Horváth Ábel</span></div>
+
+  <h1>Talizmán vendéglő<br><span>három mintaoldal</span></h1>
+  <p class="bev">Kedves Stefán Csaba! Ugyanaz a tartalom, három különböző hangulatban. Mindegyik <b>telefonon is kényelmes</b>: a hívás és az útvonaltervezés egy érintés, és mindegyik mutatja, hogy <b>éppen nyitva vannak-e</b>.</p>
+
+  <div class="valtozatok">
+    <a class="v" href="1/">
+      <div class="elonezet" data-elonezet="1/"></div>
+      <div class="test"><span class="szam">1. változat</span><h2>Kockás abrosz</h2>
+        <p>Meleg, vendéglős hangulat, napi menüvel, étlappal és csoportos ajánlatkéréssel.</p>
+        <p class="kinek"><b>Akkor jó,</b> ha a helyi ebédelők és a családi alkalmak a fő vendégkör.</p>
+        <span class="nyit">Megnyitás →</span></div>
+    </a>
+    <a class="v" href="2/">
+      <div class="elonezet" data-elonezet="2/"></div>
+      <div class="test"><span class="szam">2. változat</span><h2>Kemence</h2>
+        <p>Sötét, nagybetűs, minden a rendelés felé visz. Telefonon alul végig ott a hívás gomb.</p>
+        <p class="kinek"><b>Akkor jó,</b> ha a pizza és az elvitel hozza a forgalom nagyát.</p>
+        <span class="nyit">Megnyitás →</span></div>
+    </a>
+    <a class="v" href="3/">
+      <div class="elonezet" data-elonezet="3/"></div>
+      <div class="test"><span class="szam">3. változat</span><h2>Étlap</h2>
+        <p>Olyan, mint egy nyomtatott étlap: letisztult, villámgyors, és ki is nyomtatható.</p>
+        <p class="kinek"><b>Akkor jó,</b> ha a vendégek elsősorban az étlapot és az árakat keresik.</p>
+        <span class="nyit">Megnyitás →</span></div>
+    </a>
+  </div>
+
+  <div class="ket">
+    <div class="doboz">
+      <h3>Ami mindháromban benne van</h3>
+      <ul>
+        <li>Élő jelzés: „most nyitva” vagy „holnap 9:30-kor nyitunk”</li>
+        <li>Egy érintéses hívás és útvonaltervezés</li>
+        <li>Napi menü, amit Önök írnak át reggelente, akár telefonról</li>
+        <li>Teljes étlap kategóriákra bontva</li>
+        <li>Gyors betöltés mobilneten is</li>
+      </ul>
+    </div>
+    <div class="doboz sotet">
+      <h3>Amit még pontosítani kell</h3>
+      <ul>
+        <li>A címet, a telefonszámot és a nyitvatartást nyilvános listákból vettem (Bajai út 16., kedd–vasárnap 9:30–21:00). Ha eltér, javítom.</li>
+        <li>Az étlap fogásai csak példák, a véglegesbe az Önök étlapja kerül, árakkal.</li>
+        <li>Az ételfotók szabad licencű illusztrációk. A kész oldalon az Önök ételei szerepelnének.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="zaro">
+    <div><h3>Melyik tetszik?</h3><p>Elég egy rövid válasz, például „a második”, vagy hogy melyikből mit venne át. Utána egy rövid telefonon átbeszéljük az étlapot és a képeket. Ezek csak kiindulópontok: színen, szövegen, képeken, felépítésen még bőven lehet változtatni, amíg pont olyan nem lesz, amilyet szeretne.</p></div>
+    <a href="mailto:horvatabel@legwork.hu?subject=Talizm%C3%A1n%20mintaoldal">horvatabel@legwork.hu</a>
+  </div>
+
+  <footer>Ezek bemutató oldalak, nem a Talizmán vendéglő hivatalos oldalai, és a keresők nem indexelik őket.</footer>
+</div>
+<script>
+// Élő kicsinyített előnézet minden kártyán (asztali és telefonos nézet).
+document.querySelectorAll("[data-elonezet]").forEach((d) => {
+  const u = d.dataset.elonezet;
+  d.innerHTML = `<iframe src="${u}" tabindex="-1" aria-hidden="true" loading="lazy" scrolling="no"></iframe><div class="tel"><iframe src="${u}" tabindex="-1" aria-hidden="true" loading="lazy" scrolling="no"></iframe></div>`;
+  const nagy = d.querySelector(":scope > iframe");
+  const meretez = () => { nagy.style.transform = `scale(${d.clientWidth / 1280})`; };
+  meretez(); new ResizeObserver(meretez).observe(d);
+});
+</script>
+</body>
+</html>

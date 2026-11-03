@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Talizmán vendéglő · étlap · Bátaszék (mintaoldal 3.)</title>
+<link rel="stylesheet" href="../../_v2fonts/fonts.css">
+<style>
+:root{--tinta:#1F2A44;--tinta2:#4A5571;--piros:#B8322A;--papir:#FFFFFF;--asztal:#E9ECF2;--vonal:#D5DAE4;--e:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--asztal);color:var(--tinta);font:400 17px/1.6 'Libre Franklin',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--piros);outline-offset:3px}
+.minta{background:var(--tinta);color:#C9D0DE;font-size:13.5px;text-align:center;padding:7px 16px}
+.minta b,.minta a{color:#fff}
+.lap{max-width:860px;margin:28px auto 0;background:var(--papir);box-shadow:0 1px 2px rgba(31,42,68,.08),0 40px 80px -50px rgba(31,42,68,.45);position:relative}
+.lap::before{content:"";position:absolute;inset:14px;border:1px solid var(--vonal);pointer-events:none}
+.lap::after{content:"";position:absolute;inset:19px;border:1px solid var(--vonal);pointer-events:none}
+.belso{padding:70px clamp(28px,8vw,96px) 60px;position:relative;z-index:1}
+.fejlec{text-align:center}
+.fejlec .felso{font:600 12.5px 'Libre Franklin';letter-spacing:.32em;text-transform:uppercase;color:var(--tinta2)}
+.fejlec h1{font:italic 400 clamp(64px,11vw,112px)/.95 Spectral,serif;letter-spacing:-.02em;margin:14px 0 6px}
+.fejlec .alatt{font:500 14px 'Libre Franklin';letter-spacing:.22em;text-transform:uppercase;color:var(--tinta2)}
+.disz{display:flex;align-items:center;gap:14px;justify-content:center;margin:24px auto;color:var(--piros)}
+.disz::before,.disz::after{content:"";height:1px;width:70px;background:currentColor;opacity:.6}
+.allapot{display:inline-block;font-weight:600;color:#2E6B45}
+.allapot.zarva{color:var(--piros)}
+.gombok{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+.gomb{padding:12px 22px;border:1.5px solid var(--tinta);text-decoration:none;font-weight:600;font-size:15.5px;letter-spacing:.02em;transition:background .2s,color .2s}
+.gomb.p{background:var(--tinta);color:#fff}
+.gomb:hover{background:var(--piros);border-color:var(--piros);color:#fff}
+/* ragadós fejezet-sáv */
+.fejezetek{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--vonal);border-bottom:1px solid var(--vonal);margin:44px calc(-1 * clamp(28px,8vw,96px)) 0;padding:0 clamp(28px,8vw,96px);display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.fejezetek a{flex:none;padding:15px 12px;text-decoration:none;font-weight:600;font-size:14.5px;color:var(--tinta2);border-bottom:2px solid transparent}
+.fejezetek a.most{color:var(--tinta);border-bottom-color:var(--piros)}
+/* napi menü kártya */
+.napi{margin:44px 0 10px;border:1.5px solid var(--tinta);padding:28px 30px;position:relative}
+.napi .cimke{position:absolute;top:-13px;left:24px;background:var(--papir);padding:0 10px;font:600 12.5px 'Libre Franklin';letter-spacing:.24em;text-transform:uppercase;color:var(--piros)}
+.napi h2{font:italic 400 34px Spectral,serif;margin:0 0 4px}
+.napi .datum{color:var(--tinta2);font-size:15px}
+.napi .ketto{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:18px}
+.napi h3{font:600 13px 'Libre Franklin';letter-spacing:.2em;text-transform:uppercase;margin:0 0 6px;color:var(--piros)}
+.napi p{margin:0}
+/* étlap */
+.fejezet{padding-top:52px}
+.fejezet h2{font:italic 400 44px/1 Spectral,serif;text-align:center;margin:0}
+.fejezet .alcim{text-align:center;color:var(--tinta2);font-size:14.5px;margin:8px 0 20px}
+.tetel{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:baseline;padding:11px 0}
+.tetel b{font:500 20px Spectral,serif}
+.tetel .pont{border-bottom:1.5px dotted #A8B1C4;transform:translateY(-5px)}
+.tetel .ar{font-variant-numeric:tabular-nums;color:var(--tinta2);font-size:15px}
+.tetel small{grid-column:1/-1;margin-top:-6px;color:var(--tinta2);font-size:14.5px;font-style:italic;font-family:Spectral,serif}
+.megj{text-align:center;color:var(--tinta2);font-size:14px;font-style:italic;font-family:Spectral,serif;margin-top:36px}
+/* infó */
+.infok{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:56px;padding-top:40px;border-top:1px solid var(--vonal)}
+.infok h3{font:600 12.5px 'Libre Franklin';letter-spacing:.24em;text-transform:uppercase;color:var(--piros);margin:0 0 10px}
+.orak{width:100%;border-collapse:collapse;font-size:16px}
+.orak td{padding:5px 0;border-bottom:1px dotted var(--vonal)}
+.orak td+td{text-align:right;font-variant-numeric:tabular-nums}
+.orak tr.ma td{font-weight:700}
+.infok a.tel{font:italic 400 34px Spectral,serif;text-decoration:none;display:block;margin:2px 0 6px}
+footer{max-width:860px;margin:0 auto;padding:26px 20px 60px;color:var(--tinta2);font-size:13px;text-align:center}
+@media (max-width:640px){
+  .lap{margin-top:0}
+  .lap::before,.lap::after{display:none}
+  .belso{padding-top:44px}
+  .napi{padding:24px 20px}
+  .napi .ketto,.infok{grid-template-columns:1fr}
+  .fejezet h2{font-size:38px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.minta,.fejezetek,.gombok,footer{display:none}body{background:#fff}.lap{box-shadow:none}}
+</style>
+</head>
+<body>
+<div class="minta">Ez egy <b>mintaoldal</b>, nem a Talizmán vendéglő hivatalos oldala. Készítette Horváth Ábel (legwork.hu). <a href="../">← Mind a három változat</a></div>
+
+<main class="lap">
+  <div class="belso">
+    <header class="fejlec">
+      <div class="felso">Bátaszék · Bajai út 16.</div>
+      <h1>Talizmán</h1>
+      <div class="alatt">vendéglő &amp; pizzéria</div>
+      <div class="disz" aria-hidden="true">✦</div>
+      <div><span class="allapot" data-allapot>…</span></div>
+      <div class="gombok">
+        <a class="gomb p" href="tel:+3674492590">Hívás · 74 492 590</a>
+        <a class="gomb" href="https://www.google.com/maps/dir/?api=1&amp;destination=46.1972051,18.7278029" target="_blank" rel="noopener">Útvonal</a>
+      </div>
+    </header>
+
+    <nav class="fejezetek" aria-label="Étlap fejezetei" data-fejezetek></nav>
+
+    <section class="napi" id="napi">
+      <span class="cimke">Mai menü</span>
+      <h2>Napi ajánlat</h2>
+      <div class="datum" data-datum></div>
+      <div class="ketto">
+        <div><h3>A menü</h3><p>Gulyásleves<br>Rántott sertésszelet, petrezselymes burgonya</p></div>
+        <div><h3>B menü</h3><p>Zöldségkrémleves<br>Paprikás csirke galuskával</p></div>
+      </div>
+    </section>
+
+    <div data-etlap></div>
+    <p class="megj">Az étlap fogásai példák. A kész oldalon az Önök étlapja áll, árakkal, és egy gombnyomással kinyomtatható.</p>
+
+    <section class="infok" id="eler">
+      <div><h3>Asztalfoglalás, rendelés</h3><a class="tel" href="tel:+3674492590">74 492 590</a><span style="color:var(--tinta2)">Helyben, elvitelre, házhoz</span><p style="margin:18px 0 0">7140 Bátaszék, Bajai út 16.</p></div>
+      <div><h3>Nyitvatartás</h3><table class="orak" data-orak aria-label="Nyitvatartás"></table></div>
+    </section>
+  </div>
+</main>
+
+<footer>Mintaoldal a Talizmán vendéglő számára. A cím, a telefonszám és a nyitvatartás nyilvános listákból származik, véglegesítés előtt egyeztetjük.</footer>
+
+<script src="../talizman.js"></script>
+<script>
+Talizman.allapot(document.querySelector("[data-allapot]"));
+Talizman.orak(document.querySelector("[data-orak]"));
+Talizman.datum(document.querySelector("[data-datum]"));
+(() => {
+  const nevek = { leves: ["Levesek", "melegen, friss kenyérrel"], foetel: ["Frissensültek", "rendelésre készül"], hal: ["Halételek", "harcsa és ponty"], pizza: ["Pizzák", "helyben és elvitelre"], teszta: ["Tészták", ""], edes: ["Desszertek", "a végére"] };
+  const hely = document.querySelector("[data-etlap]"), nav = document.querySelector("[data-fejezetek]");
+  nav.innerHTML = `<a href="#napi">Mai menü</a>` + Object.keys(nevek).map((k) => `<a href="#f-${k}">${nevek[k][0]}</a>`).join("") + `<a href="#eler">Elérhetőség</a>`;
+  hely.innerHTML = Object.entries(Talizman.ETLAP).map(([k, f]) => `
+    <section class="fejezet" id="f-${k}"><h2>${nevek[k][0]}</h2><p class="alcim">${nevek[k][1] || "&nbsp;"}</p>
+    ${f.tetelek.map(([n, l]) => `<div class="tetel"><b>${n}</b><span class="pont"></span><span class="ar">… Ft</span>${l ? `<small>${l}</small>` : ""}</div>`).join("")}
+    </section>`).join("");
+  // A sáv mutatja, hol tart az olvasó.
+  const linkek = [...nav.querySelectorAll("a")];
+  const celok = linkek.map((a) => document.querySelector(a.getAttribute("href")));
+  const jelol = () => {
+    let akt = 0;
+    celok.forEach((c, i) => { if (c.getBoundingClientRect().top < 140) akt = i; });
+    linkek.forEach((a, i) => a.classList.toggle("most", i === akt));
+  };
+  addEventListener("scroll", jelol, { passive: true }); jelol();
+})();
+</script>
+</body>
+</html>
